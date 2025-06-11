@@ -4,7 +4,9 @@ Este repositorio contiene diversas automatizaciones creadas con Python para opti
 
 ## 🚀 Automatización Airbnb  
 
-La carpeta [`automatización_airbnb`](./automatización_airbnb) incluye scripts y herramientas diseñadas para mejorar la gestión y automatización de procesos relacionados con Airbnb.  
+
+La carpeta [`automatización_airbnb`](https://github.com/mtsprznto/Automatizaciones/tree/main/automatizacion_airbnb) incluye scripts y herramientas diseñadas para mejorar la gestión y automatización de procesos relacionados con Airbnb.  
+
 
 ### 📂 Contenido  
 
