@@ -37,14 +37,32 @@ for grupo in grupos_arriendos:
     time.sleep(5)
     
     try:
-        WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.XPATH, '//div[@aria-posinset]')))
+        # Esperar a que el contenedor `feed` esté presente
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//div[@role="feed"]')))
+        contenedor_feed = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
-        # Intentar capturar los elementos correctos
-        bloques = driver.find_elements(By.XPATH, '//div[@aria-posinset]')
+        # **Scroll para cargar más elementos**
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(3)  # Esperar unos segundos para la carga
 
-        # Depuración
-        print(f"Cantidad de bloques encontrados: {len(bloques)}")
+        # Buscar los bloques dentro del contenedor `feed`
+        bloques = contenedor_feed.find_elements(By.XPATH, './/div[contains(@class, "x1yztbdb")]')
 
+        # Depuración: Mostrar la cantidad de bloques encontrados
+        print(f"Cantidad de bloques encontrados dentro de 'feed': {len(bloques)}")
+
+        nombres = []
+        
+        for i, bloque in enumerate(bloques):
+            try:
+                nombre_elemento = bloque.find_element(By.XPATH, './/strong[contains(@class, "xdj266r")]/span')
+                nombre = nombre_elemento.text.strip()
+                if nombre:
+                    nombres.append(nombre)
+            except Exception as e:
+                print(f"Error al extraer nombre en bloque {i+1}: {e}")
+
+        print("Nombres encontrados:", nombres)
 
 
 
