@@ -1,4 +1,6 @@
 import time
+import re
+
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -11,6 +13,19 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 from dotenv import load_dotenv
 load_dotenv()
+
+#-------------------------
+# UTILS
+#-------------------------
+
+
+def guardar_en_txt(texto, nombre_archivo="./data_scraping/bloques_extraidos.txt"):
+    """Guarda el texto en un archivo .txt, agregándolo al final."""
+    with open(nombre_archivo, "a", encoding="utf-8") as archivo:
+        archivo.write(texto + "\n\n")  # Agrega el texto con un salto de línea
+
+
+
 
 
 
@@ -39,6 +54,9 @@ try:
 except Exception as e: 
     print(f"Error inesperado: {e}")
 
+#-------------------------
+# Scraping y guardado en archivo
+#-------------------------
 
 
 try:
@@ -64,43 +82,17 @@ try:
     time.sleep(SCROLL_PAUSE_TIME)
     new_height = driver.execute_script("return document.body.scrollHeight")
 
-
-    
-    time.sleep(SCROLL_PAUSE_TIME)
-    print(elements[1].text)
-    time.sleep(SCROLL_PAUSE_TIME)
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(SCROLL_PAUSE_TIME)
-    new_height = driver.execute_script("return document.body.scrollHeight")
-    
-    time.sleep(SCROLL_PAUSE_TIME)
-    print(elements[2].text)
-    time.sleep(SCROLL_PAUSE_TIME)
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(SCROLL_PAUSE_TIME)
-    new_height = driver.execute_script("return document.body.scrollHeight")
-
-    time.sleep(SCROLL_PAUSE_TIME)
-    print(elements[3].text)
-    time.sleep(SCROLL_PAUSE_TIME)
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(SCROLL_PAUSE_TIME)
-    new_height = driver.execute_script("return document.body.scrollHeight")
-    
-    time.sleep(SCROLL_PAUSE_TIME)
-    print(elements[4].text)
-    time.sleep(SCROLL_PAUSE_TIME)
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(SCROLL_PAUSE_TIME)
-    new_height = driver.execute_script("return document.body.scrollHeight")
-
-
-
+    for cont in range(1, 11):
+        time.sleep(SCROLL_PAUSE_TIME)
+        print(elements[cont].text)
+        guardar_en_txt(elements[cont].text)
+        time.sleep(SCROLL_PAUSE_TIME)
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(SCROLL_PAUSE_TIME)
+        new_height = driver.execute_script("return document.body.scrollHeight")
+        
 
     driver.quit()
 except Exception as e:
     print(f"Error inesperado: {e}")
     driver.quit()
-
-    
-
