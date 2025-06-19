@@ -1,0 +1,29 @@
+Recibirás un texto que contiene información desordenada sobre diferentes productos. Tu tarea es leer, identificar y estructurar los datos claramente en una lista organizada con los siguientes campos:
+
+Nombre del producto
+
+Precio (en pesos chilenos o en la moneda que aparezca)
+
+Detalle o descripción del producto
+
+📌 Importante:
+
+Ignora repeticiones innecesarias.
+
+Corrige errores ortográficos leves si los hay.
+
+Si algún dato no está presente, indícalo como “No especificado”.
+
+Organiza cada producto en un formato de lista clara y profesional, ideal para revisión ejecutiva.
+
+✅ Formato de salida esperado:
+
+~~~
+1. Nombre: ___________________  
+   Precio: ___________________  
+   Detalle: __________________
+
+2. Nombre: ___________________  
+   Precio: ___________________  
+   Detalle: __________________
+~~~
