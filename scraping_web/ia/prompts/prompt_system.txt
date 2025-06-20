@@ -1,0 +1,17 @@
+# Organiza cada producto en un formato de lista clara y profesional, ideal para revisión ejecutiva.
+
+Organiza cada producto en un formato de lista clara y profesional, ideal para revisión ejecutiva.
+
+Formato de salida esperado en markdown:
+
+~~~
+1. **Nombre:** [Nombre del producto]
+   **Precio:** [Precio del producto]
+   **Detalle:** [Descripción detallada del producto]
+
+2. **Nombre:** [Nombre del producto]
+   **Precio:** [Precio del producto]
+   **Detalle:** [Descripción detallada del producto]
+
+...
+~~~

@@ -18,14 +18,10 @@ load_dotenv()
 # UTILS
 #-------------------------
 
+nombre_archivo = "./data_scraping/bloques_extraidos.txt"
 
-def guardar_en_txt(texto, nombre_archivo="./data_scraping/bloques_extraidos.txt"):
-    """Guarda el texto en un archivo .txt, agregándolo al final."""
-    with open(nombre_archivo, "a", encoding="utf-8") as archivo:
-        archivo.write(texto + "\n\n")  # Agrega el texto con un salto de línea
-
-
-
+from utils.guardar_en_txt import guardar_en_txt
+from utils.obtener_slug import obtener_slug
 
 
 
@@ -40,7 +36,9 @@ try:
     options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
     driver = webdriver.Firefox()
     driver.maximize_window()
-    driver.get("https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr")
+    url_iniciar_session = "https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"
+    
+    driver.get(url_iniciar_session)
     time.sleep(4)
     email_input = driver.find_element(By.ID, "email")
     email_input.send_keys(os.getenv('NUM_FB'))
@@ -64,8 +62,8 @@ try:
     last_height = driver.execute_script("return document.body.scrollHeight")
 
     #-------------------------
-    url = 'https://web.facebook.com/groups/692338427471692'
-    driver.get(url)
+    url_scraping = 'https://web.facebook.com/groups/692338427471692'
+    driver.get(url_scraping)
 
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(SCROLL_PAUSE_TIME)
@@ -85,7 +83,7 @@ try:
     for cont in range(1, 11):
         time.sleep(SCROLL_PAUSE_TIME)
         print(elements[cont].text)
-        guardar_en_txt(elements[cont].text)
+        guardar_en_txt(elements[cont].text, nombre_archivo)
         time.sleep(SCROLL_PAUSE_TIME)
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(SCROLL_PAUSE_TIME)
@@ -96,3 +94,25 @@ try:
 except Exception as e:
     print(f"Error inesperado: {e}")
     driver.quit()
+
+
+#-------------------------
+# IA organizar
+#-------------------------
+try:
+    from ia.consultas import agente_llm
+    from datetime import datetime
+
+
+    #input_file = "./data_scraping/bloques_extraidos.txt"
+    respuesta = agente_llm(nombre_archivo)
+    #print(respuesta)
+    fecha_formato = datetime.now().strftime("%d%m%y")
+    slug = obtener_slug(url_scraping)
+    print(slug)
+    print(fecha_formato)
+
+    ia_response = f"./data_scraping/ia_response/{fecha_formato}_{slug}.md"
+    guardar_en_txt(respuesta, ia_response)
+except Exception as e:
+    print(f"Error inesperado: {e}")

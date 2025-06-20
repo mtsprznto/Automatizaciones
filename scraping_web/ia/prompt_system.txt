@@ -16,6 +16,7 @@ Si algún dato no está presente, indícalo como “No especificado”.
 
 Organiza cada producto en un formato de lista clara y profesional, ideal para revisión ejecutiva.
 
+✅ Quiero que el formato de salida sea markdown
 ✅ Formato de salida esperado:
 
 ~~~
