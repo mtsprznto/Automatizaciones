@@ -20,7 +20,7 @@ El repositorio está organizado en los siguientes directorios principales:
 ### 📈 Scraping Web
 - Sistema general de scraping con integración de IA
 - Utiliza Selenium para la automatización web
-- Procesamiento de datos con GPT/Llama 2
+- Procesamiento de datos con IA
 - Sistema de limpieza y organización de datos
 - Manejo de sesiones y autenticación
 
@@ -28,7 +28,7 @@ El repositorio está organizado en los siguientes directorios principales:
 
 - **Python**: Lenguaje principal
 - **Selenium**: Para la automatización web
-- **GPT/Llama 2**: Procesamiento de lenguaje natural
+- **IA**: Procesamiento de lenguaje natural
 - **Pandas**: Análisis de datos
 - **FastAPI**: API backend
 
@@ -37,7 +37,7 @@ El repositorio está organizado en los siguientes directorios principales:
 - Python 3.8+
 - Firefox WebDriver (para Selenium)
 - Variables de entorno configuradas (.env)
-- API keys necesarias (Groq/GPT)
+- API keys necesarias (Groq)
 
 ## 🚀 Instalación
 
@@ -95,6 +95,16 @@ cp .env.example .env
 - Sistema de limpieza avanzada
 - Manejo de sesiones y autenticación
 
+### Scraping AllTD
+
+[`scraping_alltd`](https://github.com/mtsprznto/Automatizaciones/tree/main/scraping_alltd)
+
+- Extracción de artículos y tutoriales de AllTD.org
+- Procesamiento de contenido dinámico con Selenium
+- Extracción de vídeos incrustados de YouTube
+- Generación de datos estructurados en formato JSON
+- Integración con Groq AI para procesamiento avanzado
+
 ## 🤝 Contribución
 ¡Contribuciones son bienvenidas! Por favor, crea un issue o pull request con tus mejoras.
 
@@ -118,7 +128,7 @@ Los datos extraídos se almacenan en formatos estructurados y pueden ser procesa
 - Mantener actualizadas las API keys
 
 ## 📈 Estadísticas del Proyecto
-- 3 proyectos principales
+- 4 proyectos principales
 - +1000 líneas de código
 - +10 scripts automatizados
 - +5 integraciones con servicios externos
@@ -134,9 +144,9 @@ Los datos extraídos se almacenan en formatos estructurados y pueden ser procesa
 - Documentación de Selenium
 - Documentación de FastAPI
 - Documentación de GPT/Llama 2
+- Documentación de Groq API
 - Best practices de scraping
 - Guías de seguridad en scraping
 
-## 📢 Aviso Legal
-Este repositorio se proporciona "TAL CUAL" y cualquier uso que se haga de él es responsabilidad del usuario. Se recomienda revisar las políticas de uso de las plataformas antes de implementar cualquier sistema de scraping.
+
 
