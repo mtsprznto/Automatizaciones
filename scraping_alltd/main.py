@@ -27,7 +27,10 @@ async def main():
         #-------------------------
         TIME_SLEEP = 5
 
-        URL_SCRAPING = 'https://alltd.org/category/featured/'
+        FEATURED = "featured"
+        TUTORIAL = "tutorial"
+        
+        URL_SCRAPING = f'https://alltd.org/category/{TUTORIAL}/'
         driver.get(URL_SCRAPING)
         time.sleep(TIME_SLEEP)
         
