@@ -30,7 +30,7 @@ async def main():
         FEATURED = "featured"
         TUTORIAL = "tutorial"
         
-        URL_SCRAPING = f'https://alltd.org/category/{TUTORIAL}/'
+        URL_SCRAPING = f'https://alltd.org/category/{FEATURED}/'
         driver.get(URL_SCRAPING)
         time.sleep(TIME_SLEEP)
         
