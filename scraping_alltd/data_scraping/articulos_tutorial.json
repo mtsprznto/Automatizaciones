@@ -1,0 +1,812 @@
+[
+    {
+        "id": "0",
+        "titulo": "TouchDesigner POPs Tutorial – Rock Paper Scissors",
+        "autor": "ButchBangher",
+        "date": "JULY 2, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-pops-tutorial-rock-paper-scissors/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/07/touchdesigner-pops-tutorial-rock-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=rUM0Ge7QNhE"
+    },
+    {
+        "id": "1",
+        "titulo": "Touchdesigner Stream! Come make things & hangout!",
+        "autor": "PJ Visuals",
+        "date": "JULY 2, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-stream-come-make-things-hangout/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/07/touchdesigner-stream-come-make-t-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=v94m2ZJ3JbQ"
+    },
+    {
+        "id": "2",
+        "titulo": "Propuesta TouchDesigner (Lilian Garza Gudiño)",
+        "autor": "Lilian Garza",
+        "date": "JULY 2, 2025",
+        "enlace_alltd": "https://alltd.org/propuesta-touchdesigner-lilian-garza-gudino/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/07/propuesta-touchdesigner-lilian-g-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=_bpNtrurT4c"
+    },
+    {
+        "id": "3",
+        "titulo": "Simple Projection Mapping Effects in TouchDesigner – TouchDesigner Tutorial 214",
+        "autor": "jan",
+        "date": "JUNE 30, 2025",
+        "enlace_alltd": "https://alltd.org/simple-projection-mapping-effects-in-touchdesigner-touchdesigner-tutorial-214/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/simple-projection-mapping-effect-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=5WhQhQ5aB5E"
+    },
+    {
+        "id": "4",
+        "titulo": "TouchDesigner Worskhop – Your First Audio-Visual by TouchCollective",
+        "autor": "PJ Visuals",
+        "date": "JUNE 29, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-worskhop-your-first-audio-visual-by-touchcollective-2/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/touchdesigner-worskhop-your-firs-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=EvgS_aWAA2M"
+    },
+    {
+        "id": "5",
+        "titulo": "Easy TouchDesigner Tricks for Awesome Video Clips!",
+        "autor": "Ditherbit",
+        "date": "JUNE 29, 2025",
+        "enlace_alltd": "https://alltd.org/easy-touchdesigner-tricks-for-awesome-video-clips/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/easy-touchdesigner-tricks-for-aw-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=eEzaV3K0gSU"
+    },
+    {
+        "id": "6",
+        "titulo": "Text particles with POPs [Touchdesigner] – Part 1",
+        "autor": "Memo Akten",
+        "date": "JUNE 29, 2025",
+        "enlace_alltd": "https://alltd.org/text-particles-with-pops-touchdesigner-part-1/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/text-particles-with-pops-touchde.jpg",
+        "url_video": "https://www.youtube.com/watch?v=s9edKgoumJw"
+    },
+    {
+        "id": "7",
+        "titulo": "TouchDesigner Worskhop – Your First Audio-Visual by TouchCollective",
+        "autor": "PJ Visuals",
+        "date": "JUNE 29, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-worskhop-your-first-audio-visual-by-touchcollective/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/touchdesigner-worskhop-your-firs-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=EvgS_aWAA2M"
+    },
+    {
+        "id": "8",
+        "titulo": "TouchDesigner POP explorations – getting into math, neighbour + GLSL",
+        "autor": "Dan Tapper",
+        "date": "JUNE 28, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-pop-explorations-getting-into-math-neighbour-glsl/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/touchdesigner-pop-explorations-g.jpg",
+        "url_video": "https://www.youtube.com/watch?v=vbik38uPgUk"
+    },
+    {
+        "id": "9",
+        "titulo": "TouchDesigner Tutorial/Walkthrough | Yung Fazo – DGNF Edit",
+        "autor": "Split Lucidity",
+        "date": "JUNE 27, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-tutorial-walkthrough-yung-fazo-dgnf-edit/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/touchdesigner-tutorial-walkthrou-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=_TyjyI5tfmc"
+    },
+    {
+        "id": "10",
+        "titulo": "Gaussian Splats in TouchDesigner! Now in POPs!!! New Features!!!!",
+        "autor": "Lake Heckaman",
+        "date": "JUNE 27, 2025",
+        "enlace_alltd": "https://alltd.org/gaussian-splats-in-touchdesigner-now-in-pops-new-features/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/gaussian-splats-in-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=AkNs34-LMbk"
+    },
+    {
+        "id": "11",
+        "titulo": "fireworks in Touchdesigner",
+        "autor": "paketa12",
+        "date": "JUNE 27, 2025",
+        "enlace_alltd": "https://alltd.org/fireworks-in-touchdesigner/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/fireworks-in-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=iJXAeWbSigI"
+    },
+    {
+        "id": "12",
+        "titulo": "Object Tracking in TouchDesigner with MediaPipe",
+        "autor": "Torin Blankensmith",
+        "date": "JUNE 27, 2025",
+        "enlace_alltd": "https://alltd.org/object-tracking-in-touchdesigner-with-mediapipe/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/object-tracking-in-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=pwqZk3oTjEQ"
+    },
+    {
+        "id": "13",
+        "titulo": "Tubos de Colisión con POPs en TouchDesigner (Tutorial Español)",
+        "autor": "percolado",
+        "date": "JUNE 26, 2025",
+        "enlace_alltd": "https://alltd.org/tubos-de-colision-con-pops-en-touchdesigner-tutorial-espanol/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/tubos-de-colision-con-pops-en-to-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=DaOxuPiSt2o"
+    },
+    {
+        "id": "14",
+        "titulo": "Defining a global resolution in Touchdesigner",
+        "autor": "Jascha Süss",
+        "date": "JUNE 26, 2025",
+        "enlace_alltd": "https://alltd.org/defining-a-global-resolution-in-touchdesigner/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/defining-a-global-resolution-in-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=WxEgnttUMIo"
+    },
+    {
+        "id": "15",
+        "titulo": "[Hướng dẫn TouchDesigner cơ bản ] – Tương Tác Ống Nhóm Xuyên Thấu Kết Hợp Cùng Với Media Pipe",
+        "autor": "Lê Minh Long",
+        "date": "JUNE 26, 2025",
+        "enlace_alltd": "https://alltd.org/huong-dan-touchdesigner-co-ban-tuong-tac-ong-nhom-xuyen-thau-ket-hop-cung-voi-media-pipe/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/huong-dan-touchdesigner-co-ban-t-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=ybAvUnXb98s"
+    },
+    {
+        "id": "16",
+        "titulo": "How to Link Ableton Live with TouchDesigner (2-Min Quick Tutorial for Audio-Visual Artists)",
+        "autor": "Music Hackspace",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/how-to-link-ableton-live-with-touchdesigner-2-min-quick-tutorial-for-audio-visual-artists/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/how-to-link-ableton-live-with-to-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=ou-vozg4ghY"
+    },
+    {
+        "id": "17",
+        "titulo": "COPY- SOP OPERATORS TOUCHDESIGNER – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/copy-sop-operators-touchdesigner-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/copy-sop-operators-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=hF275EdoDVg"
+    },
+    {
+        "id": "18",
+        "titulo": "SORT – SOP OPERATORS TOUCHDESIGNER – PARTE O",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/sort-sop-operators-touchdesigner-parte-o/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/sort-sop-operators-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=3oyuw8psqLo"
+    },
+    {
+        "id": "19",
+        "titulo": "TRANSFORM – SOP OPERATORS TOUCHDESIGNER – PARTE H",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/transform-sop-operators-touchdesigner-parte-h/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/transform-sop-operators-touchdes-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=5niS_50DDdc"
+    },
+    {
+        "id": "20",
+        "titulo": "NOISE – SOP OPERATORS TOUCHDESIGNER – PARTE G",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/noise-sop-operators-touchdesigner-parte-g/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/noise-sop-operators-touchdesigne-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=KlMio1Bbs14"
+    },
+    {
+        "id": "21",
+        "titulo": "DISPLACE – TOP OPERATORS TOUCHDESIGNER – PARTE O",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/displace-top-operators-touchdesigner-parte-o/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/displace-top-operators-touchdesi-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=EfugCCnBLDY"
+    },
+    {
+        "id": "22",
+        "titulo": "CROP – TOP OPERATORS TOUCHDESIGNER – PARTE L",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/crop-top-operators-touchdesigner-parte-l/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/crop-top-operators-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=dui6gLuGi8Q"
+    },
+    {
+        "id": "23",
+        "titulo": "RENDER – TOP OPERATORS TOUCHDESIGNER – PARTE I",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/render-top-operators-touchdesigner-parte-i/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/render-top-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=VBNSM1bUd9c"
+    },
+    {
+        "id": "24",
+        "titulo": "SELECT – TOP OPERATORS TOUCHDESIGNER – PARTE M",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/select-top-operators-touchdesigner-parte-m/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/select-top-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=IMkE4WE758s"
+    },
+    {
+        "id": "25",
+        "titulo": "NOISE – CHOP OPERATORS TOUCHDESIGNER – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/noise-chop-operators-touchdesigner-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/noise-chop-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=uAeP910Ez0o"
+    },
+    {
+        "id": "26",
+        "titulo": "LFO – CHOP OPERATORS TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/lfo-chop-operators-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/lfo-chop-operators-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=Z4B05OeiAoE"
+    },
+    {
+        "id": "27",
+        "titulo": "CHOP OPERATORS TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/chop-operators-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/chop-operators-touchdesigner-par-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=uBmBzB_lGaE"
+    },
+    {
+        "id": "28",
+        "titulo": "CONSTANT – CHOP OPERATORS TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/constant-chop-operators-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/constant-chop-operators-touchdes-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=9gp8wy3kJQ0"
+    },
+    {
+        "id": "29",
+        "titulo": "SELECT – CHOP OPERATORS TOUCHDESIGNER – PARTE E",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/select-chop-operators-touchdesigner-parte-e/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/select-chop-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=N6Lv4f53w5Q"
+    },
+    {
+        "id": "30",
+        "titulo": "MATH – CHOP OPERATORS TOUCHDESIGNER – PARTE G",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/math-chop-operators-touchdesigner-parte-g/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/math-chop-operators-touchdesigne-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=6zWIYMPX2A4"
+    },
+    {
+        "id": "31",
+        "titulo": "LOOK UP – CHOP OPERATORS TOUCHDESIGNER – PARTE I",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/look-up-chop-operators-touchdesigner-parte-i/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/look-up-chop-operators-touchdesi-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=K5MDMQu7x4k"
+    },
+    {
+        "id": "32",
+        "titulo": "SPEED – CHOP OPERATORS TOUCHDESIGNER – PARTE H",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/speed-chop-operators-touchdesigner-parte-h/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/speed-chop-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=Uddw73_-JrQ"
+    },
+    {
+        "id": "33",
+        "titulo": "TRAIL – CHOP OPERATORS TOUCHDESIGNER – PARTE J",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/trail-chop-operators-touchdesigner-parte-j/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/trail-chop-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=8M3fveG7TZ8"
+    },
+    {
+        "id": "34",
+        "titulo": "AUDIO DEVICE IN – CHOP OPERATORS TOUCHDESIGNER – PARTE M",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/audio-device-in-chop-operators-touchdesigner-parte-m/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/audio-device-in-chop-operators-t-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=djLFhj4gQMQ"
+    },
+    {
+        "id": "35",
+        "titulo": "SOP TO – CHOP OPERATORS TOUCHDESIGNER – PARTE K",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/sop-to-chop-operators-touchdesigner-parte-k/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/sop-to-chop-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=cADVJDqW8Ns"
+    },
+    {
+        "id": "36",
+        "titulo": "OSC IN – CHOP OPERATORS TOUCHDESIGNER – PARTE N",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/osc-in-chop-operators-touchdesigner-parte-n/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/osc-in-chop-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=hXHnNpPjsPI"
+    },
+    {
+        "id": "37",
+        "titulo": "PANEL – CHOP OPERATORS TOUCHDESIGNER – PARTE O",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/panel-chop-operators-touchdesigner-parte-o/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/panel-chop-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=21nLn1y-KBE"
+    },
+    {
+        "id": "38",
+        "titulo": "BUTTON – COMP OPERATORS TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/button-comp-operators-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/button-comp-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=X6eNmEtevss"
+    },
+    {
+        "id": "39",
+        "titulo": "TIMER – CHOP OPERATORS TOUCHDESIGNER – PARTE P",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/timer-chop-operators-touchdesigner-parte-p/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/timer-chop-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=kaH6ntuPno4"
+    },
+    {
+        "id": "40",
+        "titulo": "SLIDER- COMP OPERATORS TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/slider-comp-operators-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/slider-comp-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=Ify8sdeRwpg"
+    },
+    {
+        "id": "41",
+        "titulo": "FIELD- COMP OPERATORS TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/field-comp-operators-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/field-comp-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=LLt7wh75evc"
+    },
+    {
+        "id": "42",
+        "titulo": "TABLE – COMP OPERATORS TOUCHDESIGNER – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/table-comp-operators-touchdesigner-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/table-comp-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=_hv5_e9q2jI"
+    },
+    {
+        "id": "43",
+        "titulo": "UI – COMP OPERATORS TOUCHDESIGNER – PARTE F",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/ui-comp-operators-touchdesigner-parte-f/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/ui-comp-operators-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=7HoO2Cyxs9s"
+    },
+    {
+        "id": "44",
+        "titulo": "GEOMETRY – COMP OPERATORS TOUCHDESIGNER – PARTE E",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/geometry-comp-operators-touchdesigner-parte-e/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/geometry-comp-operators-touchdes-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=Dtnb8RlY4-Y"
+    },
+    {
+        "id": "45",
+        "titulo": "TABLE – DAT OPERATORS TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/table-dat-operators-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/table-dat-operators-touchdesigne-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=vuyvpp-D7x4"
+    },
+    {
+        "id": "46",
+        "titulo": "TEXT – DAT OPERATORS TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/text-dat-operators-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/text-dat-operators-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=gNrB762u-uk"
+    },
+    {
+        "id": "47",
+        "titulo": "REORDER – DAT OPERATORS TOUCHDESIGNER – PARTE E",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/reorder-dat-operators-touchdesigner-parte-e/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/reorder-dat-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=mrm9ovgSDHU"
+    },
+    {
+        "id": "48",
+        "titulo": "MERGE – DAT OPERATORS TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/merge-dat-operators-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/merge-dat-operators-touchdesigne-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=UAo6ZEn0dTQ"
+    },
+    {
+        "id": "49",
+        "titulo": "SELECT – DAT OPERATORS TOUCHDESIGNER – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/select-dat-operators-touchdesigner-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/select-dat-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=kTJ3rzai9V4"
+    },
+    {
+        "id": "50",
+        "titulo": "INSERT – DAT OPERATORS TOUCHDESIGNER – PARTE F",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/insert-dat-operators-touchdesigner-parte-f/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/insert-dat-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=3gbFJ_P8oIA"
+    },
+    {
+        "id": "51",
+        "titulo": "EVALUATE – DAT OPERATORS TOUCHDESIGNER – PARTE G",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/evaluate-dat-operators-touchdesigner-parte-g/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/evaluate-dat-operators-touchdesi-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=bVI6z5ancUU"
+    },
+    {
+        "id": "52",
+        "titulo": "CHOP TO – DAT OPERATORS TOUCHDESIGNER – PARTE H",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/chop-to-dat-operators-touchdesigner-parte-h/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/chop-to-dat-operators-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=ishgcSmM07Y"
+    },
+    {
+        "id": "53",
+        "titulo": "CHOP EXECUTE – DAT OPERATORS TOUCHDESIGNER – PARTE I",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/chop-execute-dat-operators-touchdesigner-parte-i/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/chop-execute-dat-operators-touch-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=ft5_1snLRAM"
+    },
+    {
+        "id": "54",
+        "titulo": "PANEL EXECUTE – DAT OPERATORS TOUCHDESIGNER – PARTE J",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/panel-execute-dat-operators-touchdesigner-parte-j/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/panel-execute-dat-operators-touc-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=2ku-D8DZBY8"
+    },
+    {
+        "id": "55",
+        "titulo": "DAT EXECUTE – DAT OPERATORS TOUCHDESIGNER – PARTE K",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/dat-execute-dat-operators-touchdesigner-parte-k/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/dat-execute-dat-operators-touchd-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=PP5ndYPAgY4"
+    },
+    {
+        "id": "56",
+        "titulo": "OSC IN – DAT OPERATORS TOUCHDESIGNER – PARTE L",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/osc-in-dat-operators-touchdesigner-parte-l/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/osc-in-dat-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=QeTsxZop22E"
+    },
+    {
+        "id": "57",
+        "titulo": "PBR GLSL – MAT OPERATORS TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/pbr-glsl-mat-operators-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/pbr-glsl-mat-operators-touchdesi-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=9QFLi_68AuY"
+    },
+    {
+        "id": "58",
+        "titulo": "PHONG WIREFRAME – MAT OPERATORS TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/phong-wireframe-mat-operators-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/phong-wireframe-mat-operators-to-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=Afaq2rIoRkw"
+    },
+    {
+        "id": "59",
+        "titulo": "INSTALACIÓN TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/instalacion-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/instalacion-touchdesigner-parte-2-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=x180PoJ0JlE"
+    },
+    {
+        "id": "60",
+        "titulo": "INSTALACIÓN TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/instalacion-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/instalacion-touchdesigner-parte-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=SCl-LIVPtK0"
+    },
+    {
+        "id": "61",
+        "titulo": "INSTALACIÓN TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/instalacion-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/instalacion-touchdesigner-parte-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=VCqFSaJgCyY"
+    },
+    {
+        "id": "62",
+        "titulo": "TouchDesigner 是什麼？為什麼設計師都在學？｜初步功能與資源介紹 2025-EP00",
+        "autor": "jan",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-%e6%98%af%e4%bb%80%e9%ba%bc%ef%bc%9f%e7%82%ba%e4%bb%80%e9%ba%bc%e8%a8%ad%e8%a8%88%e5%b8%ab%e9%83%bd%e5%9c%a8%e5%ad%b8%ef%bc%9f%ef%bd%9c%e5%88%9d%e6%ad%a5%e5%8a%9f%e8%83%bd%e8%88%87/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/touchdesigner-4-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=uON5CLGiTeg"
+    },
+    {
+        "id": "63",
+        "titulo": "NODOS – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/nodos-touchdesigner-elementos-basicos-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/nodos-touchdesigner-elementos-ba-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=SZeWy0xu9SE"
+    },
+    {
+        "id": "64",
+        "titulo": "CATEGORIAS OPERADORES – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE H",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/categorias-operadores-touchdesigner-elementos-basicos-parte-h/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/categorias-operadores-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=1Ng9kfysEZI"
+    },
+    {
+        "id": "65",
+        "titulo": "OPERADORES – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE F",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/operadores-touchdesigner-elementos-basicos-parte-f/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/operadores-touchdesigner-element-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=9gxcvHCGAtw"
+    },
+    {
+        "id": "66",
+        "titulo": "CABLES – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE I",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/cables-touchdesigner-elementos-basicos-parte-i/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/cables-touchdesigner-elementos-b-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=HEf97hH0DVo"
+    },
+    {
+        "id": "67",
+        "titulo": "OPERADORES – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE G",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/operadores-touchdesigner-elementos-basicos-parte-g/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/operadores-touchdesigner-element-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=aokU5WtSQ5c"
+    },
+    {
+        "id": "68",
+        "titulo": "MOUSE + OPERADORES – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE E",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/mouse-operadores-touchdesigner-elementos-basicos-parte-e/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/mouse-operadores-touchdesigner-e-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=aewe-S-iDxQ"
+    },
+    {
+        "id": "69",
+        "titulo": "RELACIONES DE PARAMENTROS- TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE J",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/relaciones-de-paramentros-touchdesigner-elementos-basicos-parte-j/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/relaciones-de-paramentros-touchd-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=0C515SHP32c"
+    },
+    {
+        "id": "70",
+        "titulo": "FLUJO INFORMACIÓN – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE K",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/flujo-informacion-touchdesigner-elementos-basicos-parte-k/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/flujo-informacion-touchdesigner-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=idwKlwYUsv0"
+    },
+    {
+        "id": "71",
+        "titulo": "INTRO – OPERATOR SNIPPETS  TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/intro-operator-snippets-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/intro-operator-snippets-touchdes-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=PFfm0N34YB0"
+    },
+    {
+        "id": "72",
+        "titulo": "GENERAL – OPERATOR SNIPPETS  TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/general-operator-snippets-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/general-operator-snippets-touchd-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=usYuUkVltRM"
+    },
+    {
+        "id": "73",
+        "titulo": "COMP  – OPERATOR SNIPPETS  TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/comp-operator-snippets-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/comp-operator-snippets-touchdesi-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=E2gW9NccxFc"
+    },
+    {
+        "id": "74",
+        "titulo": "CHOP – OPERATOR SNIPPETS  TOUCHDESIGNER – PARTE E",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/chop-operator-snippets-touchdesigner-parte-e/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/chop-operator-snippets-touchdesi-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=tmMIRUkjbmE"
+    },
+    {
+        "id": "75",
+        "titulo": "TOP – OPERATOR SNIPPETS  TOUCHDESIGNER – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/top-operator-snippets-touchdesigner-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/top-operator-snippets-touchdesig-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=ruRz6wdf6aI"
+    },
+    {
+        "id": "76",
+        "titulo": "RELACIONES DE OPERADORES TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/relaciones-de-operadores-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/relaciones-de-operadores-touchde-2-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=6pxk69-Dfto"
+    },
+    {
+        "id": "77",
+        "titulo": "RELACIONES DE OPERADORES TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/relaciones-de-operadores-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/relaciones-de-operadores-touchde-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=3hZEQlRtrvs"
+    },
+    {
+        "id": "78",
+        "titulo": "RELACIONES DE OPERADORES TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/relaciones-de-operadores-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/relaciones-de-operadores-touchde-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=hxD2rmpiON4"
+    },
+    {
+        "id": "79",
+        "titulo": "NULL – OPERADORES COMUNES TOUCHDESIGNER – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/null-operadores-comunes-touchdesigner-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/null-operadores-comunes-touchdes-2-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=A9M3JDurcHA"
+    },
+    {
+        "id": "80",
+        "titulo": "NULL – OPERADORES COMUNES TOUCHDESIGNER – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/null-operadores-comunes-touchdesigner-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/null-operadores-comunes-touchdes-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=eLYeJifs-0E"
+    },
+    {
+        "id": "81",
+        "titulo": "IN & OUT – OPERADORES COMUNES TOUCHDESIGNER – PARTE D",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/in-out-operadores-comunes-touchdesigner-parte-d/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/in-out-operadores-comunes-touchd-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=2MgdNHdDw30"
+    },
+    {
+        "id": "82",
+        "titulo": "NULL – OPERADORES COMUNES TOUCHDESIGNER – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/null-operadores-comunes-touchdesigner-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/null-operadores-comunes-touchdes-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=upSdNiei5TE"
+    },
+    {
+        "id": "83",
+        "titulo": "SELECT – OPERADORES COMUNES TOUCHDESIGNER – PARTE G",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/select-operadores-comunes-touchdesigner-parte-g/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/select-operadores-comunes-touchd-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=IYFSz6Ngm_o"
+    },
+    {
+        "id": "84",
+        "titulo": "MULTIFAMILIA IN & OUT – OPERADORES COMUNES TOUCHDESIGNER – PARTE F",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/multifamilia-in-out-operadores-comunes-touchdesigner-parte-f/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/multifamilia-in-out-operadores-c-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=2eFEalkeR40"
+    },
+    {
+        "id": "85",
+        "titulo": "SWITCH – OPERADORES COMUNES TOUCHDESIGNER – PARTE E",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/switch-operadores-comunes-touchdesigner-parte-e/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/switch-operadores-comunes-touchd-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=D5zapntz7fY"
+    },
+    {
+        "id": "86",
+        "titulo": "GETTING STARTED – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE A",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/getting-started-touchdesigner-elementos-basicos-parte-a/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/getting-started-touchdesigner-el-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=kAI1lMfdXKo"
+    },
+    {
+        "id": "87",
+        "titulo": "INTERFAZ USUARIO – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE B",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/interfaz-usuario-touchdesigner-elementos-basicos-parte-b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/interfaz-usuario-touchdesigner-e-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=GuxIR_5Js1s"
+    },
+    {
+        "id": "88",
+        "titulo": "INTERFAZ USUARIO – TOUCHDESIGNER  ELEMENTOS BASICOS – PARTE C",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/interfaz-usuario-touchdesigner-elementos-basicos-parte-c/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/interfaz-usuario-touchdesigner-e-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=wRv8eHjsqXs"
+    },
+    {
+        "id": "89",
+        "titulo": "ARDUINO TD OPERATORS – TOUCHDESIGNER",
+        "autor": "Tutor Digital",
+        "date": "JUNE 25, 2025",
+        "enlace_alltd": "https://alltd.org/arduino-td-operators-touchdesigner/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/06/arduino-td-operators-touchdesign-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=YGtjskly5VQ"
+    }
+]
