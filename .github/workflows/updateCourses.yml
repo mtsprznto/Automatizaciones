@@ -8,7 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
     steps:
         - name: Clonar repositorio
           uses: actions/checkout@v4
@@ -17,14 +18,27 @@ jobs:
           run: |
             sudo apt-get update
             sudo apt-get install -y firefox
-            curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
-            | grep "browser_download_url" \
-            | grep "linux64.tar.gz" \
-            | cut -d '"' -f 4 \
-            | xargs wget
+            url=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
+              | grep "browser_download_url" \
+              | grep "linux64.tar.gz" \
+              | cut -d '"' -f 4 \
+              | head -n 1)
+            
+            if [ -z "$url" ]; then
+              echo "❌ Error: No se encontró la URL de geckodriver."
+              exit 1
+            fi
+            
+            echo "🔗 Geckodriver URL: $url"
+            
+            wget "$url"
             tar -xvzf geckodriver-*.tar.gz
             chmod +x geckodriver
             sudo mv geckodriver /usr/local/bin/
+    
+            rm geckodriver-*.tar.gz
+
+
   
         - name: Configurar Python
           uses: actions/setup-python@v5
@@ -37,7 +51,15 @@ jobs:
         
         - name: Ejecutar scraper
           working-directory: scraping_alltd
-          run: python main.py
+          run: python main_actions.py
+          
+        - name: Commit and Push Changes
+          uses: stefanzweifel/git-auto-commit-action@v6
+          with:
+            commit_message: Actualizando json de courses
+            commit_user_name: Mts [Github Actions]
+       
+
 
 
 
