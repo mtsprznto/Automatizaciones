@@ -3,7 +3,8 @@ name: UpdateCourse
 on:
   schedule:
     - cron: '0 19 * * 5'  # Viernes a las 19:00 UTC (15:00 CLT)
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
