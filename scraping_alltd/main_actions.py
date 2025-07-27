@@ -18,9 +18,8 @@ async def main():
         options.add_argument('--disable-gpu')           # Previene errores en entorno CI
         options.add_argument('--no-sandbox')            # Útil en contenedores
         
-        service = Service(executable_path="/usr/local/bin/geckodriver")
 
-        driver = webdriver.Firefox(service=service,options=options)     # Usa opciones actualizadas
+        driver = webdriver.Firefox(options=options)     # Usa opciones actualizadas
 
         driver.maximize_window()
 
