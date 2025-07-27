@@ -8,7 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
     steps:
         - name: Clonar repositorio
           uses: actions/checkout@v4
@@ -20,7 +21,9 @@ jobs:
             url=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
               | grep "browser_download_url" \
               | grep "linux64.tar.gz" \
-              | cut -d '"' -f 4)
+              | cut -d '"' -f 4 \
+              | head -n 1 | tr -d '\n')
+
             if [ -z "$url" ]; then
               echo "❌ Error: No se encontró la URL de geckodriver."
               exit 1
@@ -46,6 +49,8 @@ jobs:
         - name: Ejecutar scraper
           working-directory: scraping_alltd
           run: python main.py
+
+       
 
 
 
