@@ -2,16 +2,11 @@ import time
 import asyncio
 
 from selenium import webdriver
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 from ia.preguntas import obtener_respuesta
 
-import os
 
 import json
 
