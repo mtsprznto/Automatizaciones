@@ -22,18 +22,21 @@ jobs:
               | grep "browser_download_url" \
               | grep "linux64.tar.gz" \
               | cut -d '"' -f 4 \
-              | head -n 1 | tr -d '\n')
-
+              | head -n 1)
+            
             if [ -z "$url" ]; then
               echo "❌ Error: No se encontró la URL de geckodriver."
               exit 1
             fi
+            
             echo "🔗 Geckodriver URL: $url"
             
             wget "$url"
             tar -xvzf geckodriver-*.tar.gz
             chmod +x geckodriver
             sudo mv geckodriver /usr/local/bin/
+    
+            rm geckodriver-*.tar.gz
 
 
   
@@ -49,7 +52,12 @@ jobs:
         - name: Ejecutar scraper
           working-directory: scraping_alltd
           run: python main.py
-
+          
+        - name: Commit and Push Changes
+          uses: stefanzweifel/git-auto-commit-action@v6
+          with:
+            commit_message: Actualizando json de courses
+            commit_user_name: Mts [Github Actions]
        
 
 
