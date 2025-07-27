@@ -43,7 +43,11 @@ jobs:
         - name: Instalar dependencias
           working-directory: scraping_alltd
           run: pip install -r requirements.txt
-        
+          
+        - name: Crear archivo .env con API key
+          working-directory: scraping_alltd
+          run: echo "api_groq=${{ secrets.API_QROQ }}" > .env
+
         - name: Ejecutar scraper
           working-directory: scraping_alltd
           run: python main_actions.py
