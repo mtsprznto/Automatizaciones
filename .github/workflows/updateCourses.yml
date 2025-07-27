@@ -46,7 +46,7 @@ jobs:
           
         - name: Crear archivo .env con API key
           working-directory: scraping_alltd
-          run: echo "api_groq=${{ secrets.API_QROQ }}" > .env
+          run: echo "api_qroq=${{ secrets.API_QROQ }}" > .env
 
         - name: Ejecutar scraper
           working-directory: scraping_alltd
