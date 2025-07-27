@@ -17,14 +17,22 @@ jobs:
           run: |
             sudo apt-get update
             sudo apt-get install -y firefox
-            curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
-            | grep "browser_download_url" \
-            | grep "linux64.tar.gz" \
-            | cut -d '"' -f 4 \
-            | xargs wget
+            url=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
+              | grep "browser_download_url" \
+              | grep "linux64.tar.gz" \
+              | cut -d '"' -f 4)
+            if [ -z "$url" ]; then
+              echo "❌ Error: No se encontró la URL de geckodriver."
+              exit 1
+            fi
+            echo "🔗 Geckodriver URL: $url"
+            
+            wget "$url"
             tar -xvzf geckodriver-*.tar.gz
             chmod +x geckodriver
             sudo mv geckodriver /usr/local/bin/
+
+
   
         - name: Configurar Python
           uses: actions/setup-python@v5
@@ -38,6 +46,7 @@ jobs:
         - name: Ejecutar scraper
           working-directory: scraping_alltd
           run: python main.py
+
 
 
 
