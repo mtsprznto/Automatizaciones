@@ -16,7 +16,10 @@ async def main():
         options.add_argument('--headless')              # Corre en modo headless
         options.add_argument('--disable-gpu')           # Previene errores en entorno CI
         options.add_argument('--no-sandbox')            # Útil en contenedores
-        driver = webdriver.Firefox(options=options)     # Usa opciones actualizadas
+        
+        service = Service(executable_path="/usr/local/bin/geckodriver")
+
+        driver = webdriver.Firefox(service=service,options=options)     # Usa opciones actualizadas
 
         driver.maximize_window()
 
