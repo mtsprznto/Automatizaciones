@@ -14,32 +14,27 @@ jobs:
         - name: Clonar repositorio
           uses: actions/checkout@v4
   
-        - name: Instalar Firefox y geckodriver
+        - name: Setup Firefox
+          uses: browser-actions/setup-firefox@v1.7.0
+          with:
+            firefox-version: latest
+        
+        - name: Install Geckodriver
           run: |
-            sudo apt-get update
-            sudo apt-get install -y firefox
             url=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
               | grep "browser_download_url" \
               | grep "linux64.tar.gz" \
-              | cut -d '"' -f 4 \
-              | head -n 1)
-            
-            if [ -z "$url" ]; then
-              echo "❌ Error: No se encontró la URL de geckodriver."
-              exit 1
-            fi
-            
-            echo "🔗 Geckodriver URL: $url"
-            
+              | cut -d '"' -f 4 | head -n 1)
             wget "$url"
             tar -xvzf geckodriver-*.tar.gz
             chmod +x geckodriver
             sudo mv geckodriver /usr/local/bin/
-    
-            rm geckodriver-*.tar.gz
 
+        - name: Verificar versiones instaladas
+          run: |
+            firefox --version
+            geckodriver --version
 
-  
         - name: Configurar Python
           uses: actions/setup-python@v5
           with:
