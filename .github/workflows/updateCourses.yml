@@ -1,0 +1,43 @@
+name: UpdateCourse
+
+on:
+  schedule:
+    - cron: '0 19 * * 5'  # Viernes a las 19:00 UTC (15:00 CLT)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+        - name: Clonar repositorio
+          uses: actions/checkout@v4
+  
+        - name: Instalar Firefox y geckodriver
+          run: |
+            sudo apt-get update
+            sudo apt-get install -y firefox
+            curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
+            | grep "browser_download_url" \
+            | grep "linux64.tar.gz" \
+            | cut -d '"' -f 4 \
+            | xargs wget
+            tar -xvzf geckodriver-*.tar.gz
+            chmod +x geckodriver
+            sudo mv geckodriver /usr/local/bin/
+  
+        - name: Configurar Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.12'
+  
+        - name: Instalar dependencias
+          working-directory: scraping_alltd
+          run: pip install -r requirements.txt
+        
+        - name: Ejecutar scraper
+          working-directory: scraping_alltd
+          run: python main.py
+
+
+
+    
