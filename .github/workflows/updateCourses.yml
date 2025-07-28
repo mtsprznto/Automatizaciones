@@ -29,6 +29,7 @@ jobs:
             tar -xvzf geckodriver-*.tar.gz
             chmod +x geckodriver
             sudo mv geckodriver /usr/local/bin/
+            rm geckodriver-*.tar.gz
 
         - name: Verificar versiones instaladas
           run: |
