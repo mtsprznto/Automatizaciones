@@ -39,4 +39,4 @@ jobs:
 
       - name: 🚀 Ejecutar script con Xvfb
         run: |
-          xvfb-run python Automatizaciones/publicar_arriendo_fb/main.py
+          xvfb-run python ./publicar_arriendo_fb/main.py
