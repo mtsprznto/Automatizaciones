@@ -1,0 +1,38 @@
+name: Publicar en Facebook
+
+on:
+  workflow_dispatch: # Ejecución manual desde GitHub
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest # O windows-latest si prefieres GUI nativa
+
+    steps:
+      - name: 📥 Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12.7"
+
+      - name: 📦 Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Automatizaciones/publicar_arriendo_fb/requirements.txt
+
+      - name: 🖥️ Instalar Chrome y ChromeDriver
+        run: |
+          sudo apt update
+          sudo apt install -y wget unzip xvfb libxi6 libgconf-2-4
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install -y ./google-chrome-stable_current_amd64.deb
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+\.\d+')
+          wget https://chromedriver.storage.googleapis.com/${CHROME_VERSION}/chromedriver_linux64.zip || wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/bin/chromedriver
+          sudo chmod +x /usr/bin/chromedriver
+
+      - name: 🚀 Ejecutar script con Xvfb
+        run: |
+          xvfb-run python Automatizaciones/publicar_arriendo_fb/main.py
