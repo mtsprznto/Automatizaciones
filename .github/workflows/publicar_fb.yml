@@ -40,5 +40,11 @@ jobs:
 
 
       - name: 🚀 Ejecutar script con Xvfb
+        env:
+          NUM_FB: ${{ secrets.NUM_FB }}
+          PASS_FB: ${{ secrets.PASS_FB }}
         run: |
+          echo "NUM_FB=$NUM_FB" >> .env
+          echo "PASS_FB=$PASS_FB" >> .env
           xvfb-run python ./publicar_arriendo_fb/main.py
+
