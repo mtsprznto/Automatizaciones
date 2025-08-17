@@ -21,21 +21,35 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./publicar_arriendo_fb/requirements.txt
 
-      - name: 🖥️ Instalar Chrome y ChromeDriver
+      - name: 🖥️ Instalar Chrome y ChromeDriver compatibles
         run: |
           sudo apt update
           sudo apt install -y wget unzip xvfb libxi6
 
+          # Instalar Chrome
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
+          # Detectar versión de Chrome
           CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+\.\d+')
+          CHROME_MAJOR=$(echo $CHROME_VERSION | cut -d '.' -f 1)
           echo "🧪 Chrome version: $CHROME_VERSION"
 
-          wget https://chromedriver.storage.googleapis.com/${CHROME_VERSION}/chromedriver_linux64.zip || wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+          # Descargar ChromeDriver compatible
+          DRIVER_URL="https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAJOR"
+          DRIVER_VERSION=$(curl -s $DRIVER_URL)
+          echo "🧪 ChromeDriver version: $DRIVER_VERSION"
+
+          wget https://chromedriver.storage.googleapis.com/${DRIVER_VERSION}/chromedriver_linux64.zip
           unzip chromedriver_linux64.zip
           sudo mv chromedriver /usr/bin/chromedriver
           sudo chmod +x /usr/bin/chromedriver
+
+      - name: 🔍 Validar versiones
+        run: |
+          google-chrome --version
+          chromedriver --version
+
 
       - name: 🚀 Ejecutar script con Xvfb
         run: |
