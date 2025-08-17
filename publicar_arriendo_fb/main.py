@@ -12,7 +12,34 @@ import os
 
 load_dotenv()
 
-driver = webdriver.Chrome()
+
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+chrome_options = Options()
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--start-maximized")
+chrome_options.add_argument("--disable-infobars")
+chrome_options.add_argument("--disable-notifications")
+chrome_options.add_argument("--disable-extensions")
+chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+chrome_options.add_argument("--remote-debugging-port=9222")
+chrome_options.add_argument("--disable-popup-blocking")
+chrome_options.add_argument("--disable-features=TranslateUI")
+
+# Si estás en entorno sin GUI (como GitHub Actions), activa headless
+# chrome_options.add_argument("--headless=new")
+
+driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager().install()),
+    options=chrome_options
+)
+
+
+#driver = webdriver.Chrome()
 driver.get('https://web.facebook.com/?_rdc=1&_rdr')
 
 
