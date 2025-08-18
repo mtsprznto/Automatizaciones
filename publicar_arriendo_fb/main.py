@@ -82,13 +82,13 @@ TS = 5
 time.sleep(TS)
 
 try:
-    escribe_algo = "//div[@role='button' and .//span[contains(text(),'Escribe algo')]]"
+    escribe_algo = "//div[@role='button' and descendant::span[contains(text(), 'Escribe algo') or contains(text(), 'Write something')]]"
     elemento = WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.XPATH, escribe_algo))
     )
     driver.execute_script("arguments[0].click();", elemento)  # Click vía JS por si hay overlays
 except Exception as e:
-    print(f"❌ Error al insertar texto: {e}")
+    print(f"❌ Error al insertar texto [escribe_algo]: {e}")
     driver.quit()
     sys.exit(1)
 
@@ -97,7 +97,7 @@ except Exception as e:
 time.sleep(TS)
 
 try:
-    crear_publicacion_publica = "//div[@contenteditable='true' and @role='textbox' and @aria-placeholder='Crea una publicación pública...']"
+    crear_publicacion_publica = "//div[@contenteditable='true' and @role='textbox' and (@aria-placeholder='Crea una publicación pública...' or @aria-placeholder='Create a public post...')]"
     editor = WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.XPATH, crear_publicacion_publica))
     )
@@ -105,7 +105,7 @@ try:
     editor.send_keys(TEXTO_DESCRIPCION)
     print("✅ Texto insertado correctamente.")
 except Exception as e:
-    print(f"❌ Error al insertar texto: {e}")
+    print(f"❌ Error al insertar texto [crear_publicacion_publica]: {e}")
     driver.quit()
     sys.exit(1)
 
@@ -115,16 +115,16 @@ time.sleep(TS)
 
 # añadir imagenes
 
-btn_agregar_a_publicacion="//div[@role='button' and @aria-label='Agregar a tu publicación']"
 
 try:
+    btn_agregar_a_publicacion="//div[@role='button' and (@aria-label='Agregar a tu publicación' or @aria-label='Add to your post')]"
     boton_agregar = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, btn_agregar_a_publicacion))
     )
     driver.execute_script("arguments[0].click();", boton_agregar)
     print("✅ Botón 'Agregar a tu publicación' clickeado correctamente.")
 except Exception as e:
-    print(f"❌ Error al hacer clic en el botón 'Agregar a tu publicación': {e}")
+    print(f"❌ Error al hacer clic en el botón [btn_agregar_a_publicacion]: {e}")
     driver.quit()
     sys.exit(1)
 
@@ -132,16 +132,16 @@ time.sleep(TS)
 
 
 
-btn_foto_video = "//span[text()='Foto/video']/ancestor::div[@role='button']"
 
 try:
+    btn_foto_video = "//span[text()='Foto/video']/ancestor::div[@role='button']"
     boton_foto_video = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, btn_foto_video))
     )
     driver.execute_script("arguments[0].click();", boton_foto_video)
     print("✅ Botón 'Foto/video' clickeado correctamente.")
 except Exception as e:
-    print(f"❌ Error al hacer clic en 'Foto/video': {e}")
+    print(f"❌ Error al hacer clic en [btn_foto_video]: {e}")
     driver.quit()
     sys.exit(1)
 
