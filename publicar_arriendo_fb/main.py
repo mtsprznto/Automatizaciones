@@ -2,6 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+from webdriver_manager.chrome import ChromeDriverManager
+
 import sys
 import time
 
@@ -13,22 +18,9 @@ import os
 load_dotenv()
 
 
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+
 
 chrome_options = Options()
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--start-maximized")
-chrome_options.add_argument("--disable-infobars")
-chrome_options.add_argument("--disable-notifications")
-chrome_options.add_argument("--disable-extensions")
-chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-chrome_options.add_argument("--remote-debugging-port=9222")
-chrome_options.add_argument("--disable-popup-blocking")
-chrome_options.add_argument("--disable-features=TranslateUI")
 
 # Si estás en entorno sin GUI (como GitHub Actions), activa headless
 chrome_options.add_argument("--headless=new")
@@ -141,7 +133,7 @@ try:
     driver.execute_script("arguments[0].click();", boton_foto_video)
     print("✅ Botón 'Foto/video' clickeado correctamente.")
 except Exception as e:
-    print(f"❌ Error al hacer clic en [btn_foto_video]: {e}")
+    print(f"❌ Error al hacer clic en 'Foto/video': {e}")
     driver.quit()
     sys.exit(1)
 
