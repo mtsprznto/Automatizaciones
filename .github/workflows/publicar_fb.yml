@@ -39,13 +39,21 @@ jobs:
           chromedriver --version
 
 
-      - name: 🚀 Ejecutar script con Xvfb
-        env:
-          NUM_FB: ${{ secrets.NUM_FB }}
-          PASS_FB: ${{ secrets.PASS_FB }}
+      # - name: 🚀 Ejecutar script con Xvfb
+      #   env:
+      #     NUM_FB: ${{ secrets.NUM_FB }}
+      #     PASS_FB: ${{ secrets.PASS_FB }}
+      #   run: |
+      #     echo "NUM_FB=$NUM_FB" >> .env
+      #     echo "PASS_FB=$PASS_FB" >> .env
+      #     xvfb-run python ./publicar_arriendo_fb/main.py
+
+      - name: Crear archivo .env con credenciales
+        working-directory: publicar_arriendo_fb
         run: |
-          echo "NUM_FB=$NUM_FB" >> .env
-          echo "PASS_FB=$PASS_FB" >> .env
-          xvfb-run python ./publicar_arriendo_fb/main.py
-      
-    
+          echo "NUM_FB=${{ secrets.NUM_FB }}" > .env
+          echo "PASS_FB=${{ secrets.PASS_FB }}" >> .env
+
+      - name: Ejecutar script
+        working-directory: publicar_arriendo_fb
+        run: python ./publicar_arriendo_fb/main.py
