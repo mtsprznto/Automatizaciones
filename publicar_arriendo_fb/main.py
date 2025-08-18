@@ -83,7 +83,6 @@ try:
     )
     driver.execute_script("arguments[0].click();", elemento)  # Click vía JS por si hay overlays
 except Exception as e:
-    driver.save_screenshot("fallo_xpath.png")
     print(f"❌ Error al insertar texto [escribe_algo]: {e}")
     driver.quit()
     sys.exit(1)

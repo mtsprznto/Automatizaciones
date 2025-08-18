@@ -48,9 +48,4 @@ jobs:
           echo "PASS_FB=$PASS_FB" >> .env
           xvfb-run python ./publicar_arriendo_fb/main.py
       
-      - name: 📸 Subir screenshot si falla XPath
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: fallo-xpath
-          path: fallo_xpath.png
+    
