@@ -1,0 +1,58 @@
+name: PublicarFbV2
+
+on:
+  schedule:
+    - cron: '0 19 * * 5'  # Viernes a las 19:00 UTC (15:00 CLT)
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+        - name: Clonar repositorio
+          uses: actions/checkout@v4
+  
+        - name: Setup Firefox
+          uses: browser-actions/setup-firefox@v1.7.0
+          with:
+            firefox-version: latest
+        
+        - name: Install Geckodriver
+          run: |
+            url=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest \
+              | grep "browser_download_url" \
+              | grep "linux64.tar.gz" \
+              | cut -d '"' -f 4 | head -n 1)
+            wget "$url"
+            tar -xvzf geckodriver-*.tar.gz
+            chmod +x geckodriver
+            sudo mv geckodriver /usr/local/bin/
+            rm geckodriver-*.tar.gz
+
+        - name: Verificar versiones instaladas
+          run: |
+            firefox --version
+            geckodriver --version
+
+        - name: Configurar Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.12'
+  
+        - name: Instalar dependencias
+          working-directory: publicar_arriendo_fb
+          run: pip install -r requirements.txt
+          
+        - name: Crear archivo .env con credenciales
+          working-directory: publicar_arriendo_fb
+          run: |
+            echo "NUM_FB=${{ secrets.NUM_FB }}" > .env
+            echo "PASS_FB=${{ secrets.PASS_FB }}" >> .env
+
+
+        - name: Ejecutar Publicacion
+          working-directory: publicar_arriendo_fb
+          run: python main_actions.py
+        
