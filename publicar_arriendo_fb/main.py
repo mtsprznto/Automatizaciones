@@ -36,7 +36,7 @@ driver.get('https://web.facebook.com/?_rdc=1&_rdr')
 
 
 
-iniciar_session(driver)
+
 
 LINK_GROUP = "https://web.facebook.com/groups/676990837721174/"
 
@@ -69,6 +69,9 @@ Contacto: +56 9 99479312
 Interesados, llamar directamente al número telefónico
 """
 
+
+iniciar_session(driver)
+print("INICIO EXITOSO")
 driver.get(LINK_GROUP)
 TS = 5
 time.sleep(TS)

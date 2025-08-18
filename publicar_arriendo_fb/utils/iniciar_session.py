@@ -18,6 +18,7 @@ def iniciar_session(driver):
         login_button = driver.find_element(By.NAME, "login") 
         login_button.click()
         time.sleep(7)
+        print("INICIO EXITOSO")
         return 1
     except Exception as e: 
         print(f"Error inesperado: {e}")
