@@ -77,7 +77,7 @@ TS = 5
 time.sleep(TS)
 
 try:
-    escribe_algo = "//div[@role='button' and descendant::span[contains(text(), 'Escribe algo') or contains(text(), 'Write something')]]"
+    escribe_algo = "//div[@role='button' and .//span[contains(., 'Escribe algo') or contains(., 'Write something')]]"
     elemento = WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.XPATH, escribe_algo))
     )
