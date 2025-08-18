@@ -23,7 +23,7 @@ load_dotenv()
 chrome_options = Options()
 
 # Si estás en entorno sin GUI (como GitHub Actions), activa headless
-chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--headless")
 
 driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
@@ -71,7 +71,7 @@ Interesados, llamar directamente al número telefónico
 
 
 iniciar_session(driver)
-print("INICIO EXITOSO")
+
 driver.get(LINK_GROUP)
 TS = 5
 time.sleep(TS)
@@ -83,6 +83,7 @@ try:
     )
     driver.execute_script("arguments[0].click();", elemento)  # Click vía JS por si hay overlays
 except Exception as e:
+    driver.save_screenshot("fallo_xpath.png")
     print(f"❌ Error al insertar texto [escribe_algo]: {e}")
     driver.quit()
     sys.exit(1)

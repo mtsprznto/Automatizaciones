@@ -32,7 +32,7 @@ jobs:
 
           # Validar instalación
           google-chrome --version
-
+      
       - name: 🔍 Validar versiones
         run: |
           google-chrome --version
@@ -47,4 +47,10 @@ jobs:
           echo "NUM_FB=$NUM_FB" >> .env
           echo "PASS_FB=$PASS_FB" >> .env
           xvfb-run python ./publicar_arriendo_fb/main.py
-
+      
+      - name: 📸 Subir screenshot si falla XPath
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: fallo-xpath
+          path: fallo_xpath.png
