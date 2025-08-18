@@ -25,11 +25,14 @@ jobs:
               | grep "browser_download_url" \
               | grep "linux64.tar.gz" \
               | cut -d '"' -f 4 | head -n 1)
+            
+            filename=$(basename "$url")
             wget "$url"
-            tar -xvzf geckodriver-*.tar.gz
+            tar -xvzf "$filename"
             chmod +x geckodriver
             sudo mv geckodriver /usr/local/bin/
-            rm geckodriver-*.tar.gz
+            rm "$filename"
+
 
         - name: Verificar versiones instaladas
           run: |
