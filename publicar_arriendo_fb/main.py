@@ -25,6 +25,9 @@ chrome_options = Options()
 # Si estás en entorno sin GUI (como GitHub Actions), activa headless
 chrome_options.add_argument("--headless")
 
+chrome_options.add_argument('--headless')              # Corre en modo headless
+chrome_options.add_argument('--disable-gpu')           # Previene errores en entorno CI
+chrome_options.add_argument('--no-sandbox')            # Útil en contenedores
 driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
     options=chrome_options
