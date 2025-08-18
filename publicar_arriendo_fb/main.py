@@ -31,7 +31,7 @@ chrome_options.add_argument("--disable-popup-blocking")
 chrome_options.add_argument("--disable-features=TranslateUI")
 
 # Si estás en entorno sin GUI (como GitHub Actions), activa headless
-# chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--headless=new")
 
 driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
