@@ -56,4 +56,4 @@ jobs:
 
       - name: Ejecutar script
         working-directory: publicar_arriendo_fb
-        run: python ./publicar_arriendo_fb/main.py
+        run: python main.py
