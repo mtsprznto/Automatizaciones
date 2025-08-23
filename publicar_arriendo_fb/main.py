@@ -58,7 +58,7 @@ Cocina equipada (microondas, loza y utensilios)
 
 Dos dormitorios:
 - 1 dormitorio con cama matrimonial
-- 1 dormitorio con dos camas de plaza
+1 dormitorio con dos camas de plaza
 
 
 Wifi disponible
