@@ -23,7 +23,6 @@ load_dotenv()
 chrome_options = Options()
 
 # Si estás en entorno sin GUI (como GitHub Actions), activa headless
-chrome_options.add_argument("--headless")
 
 chrome_options.add_argument('--headless')              # Corre en modo headless
 chrome_options.add_argument('--disable-gpu')           # Previene errores en entorno CI
@@ -41,7 +40,7 @@ driver.get('https://web.facebook.com/?_rdc=1&_rdr')
 
 
 
-LINK_GROUP = "https://web.facebook.com/groups/676990837721174/"
+LINK_GROUP = "https://web.facebook.com/groups/692338427471692/"
 
 TEXTO_DESCRIPCION = """
 Arriendo acogedor departamento interior tipo departamento en Puerto Varas
