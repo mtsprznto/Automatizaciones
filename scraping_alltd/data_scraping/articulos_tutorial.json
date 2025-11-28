@@ -1,6 +1,150 @@
 [
     {
         "id": "0",
+        "titulo": "TouchDesigner X12",
+        "autor": "Mad eZmA",
+        "date": "NOVEMBER 27, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-x12/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/touchdesigner-x12-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=bmRTzwWpXOU"
+    },
+    {
+        "id": "1",
+        "titulo": "Touchdesigner Tip: Normals, inflating and deflating mesh",
+        "autor": "Memo Akten",
+        "date": "NOVEMBER 27, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-tip-normals-inflating-and-deflating-mesh/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/touchdesigner-tip-normals-inflat-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=ScUobG5cSKg"
+    },
+    {
+        "id": "2",
+        "titulo": "3 Ways to Make POPs Particle Attractors | TouchDesigner Tutorial",
+        "autor": "VvirDev",
+        "date": "NOVEMBER 26, 2025",
+        "enlace_alltd": "https://alltd.org/3-ways-to-make-pops-particle-attractors-touchdesigner-tutorial/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/3-ways-to-make-pops-particle-att-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=M-66v4lr7N0"
+    },
+    {
+        "id": "3",
+        "titulo": "TouchDesigner 每週直播挑戰 #3- 在數位的世界中創造浪漫的動態油畫",
+        "autor": "哲宇寇汀吧 CheYu's Coding Bar",
+        "date": "NOVEMBER 25, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-%e6%af%8f%e9%80%b1%e7%9b%b4%e6%92%ad%e6%8c%91%e6%88%b0-3-%e5%9c%a8%e6%95%b8%e4%bd%8d%e7%9a%84%e4%b8%96%e7%95%8c%e4%b8%ad%e5%89%b5%e9%80%a0%e6%b5%aa%e6%bc%ab%e7%9a%84%e5%8b%95%e6%85%8b-2/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/touchdesigner-3-2-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=6D9AerJSu28"
+    },
+    {
+        "id": "4",
+        "titulo": "Come usare i nuovi Point Operators (POPs) su GPU in TouchDesigner",
+        "autor": "Jacopo Billy",
+        "date": "NOVEMBER 24, 2025",
+        "enlace_alltd": "https://alltd.org/come-usare-i-nuovi-point-operators-pops-su-gpu-in-touchdesigner/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/come-usare-i-nuovi-point-operato-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=U0jxigwZSJw"
+    },
+    {
+        "id": "5",
+        "titulo": "Easy Face Tracking with TouchDesigner",
+        "autor": "Rob Duarte",
+        "date": "NOVEMBER 24, 2025",
+        "enlace_alltd": "https://alltd.org/easy-face-tracking-with-touchdesigner/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/easy-face-tracking-with-touchdes-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=HtmxhGLojcQ"
+    },
+    {
+        "id": "6",
+        "titulo": "Chords Grid Tutorial/Walkthrough. [ TouchDesigner & Ableton ]",
+        "autor": "Che8Sounds",
+        "date": "NOVEMBER 23, 2025",
+        "enlace_alltd": "https://alltd.org/chords-grid-tutorial-walkthrough-touchdesigner-ableton/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/chords-grid-tutorial-walkthrough-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=EZjqyXu3wN4"
+    },
+    {
+        "id": "7",
+        "titulo": "Touchdesigner POP Particles constrained to inside an animated Mesh [Teaser]",
+        "autor": "Memo Akten",
+        "date": "NOVEMBER 23, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-pop-particles-constrained-to-inside-an-animated-mesh-teaser/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/touchdesigner-pop-particles-cons-1-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=SBFwbM_zjks"
+    },
+    {
+        "id": "8",
+        "titulo": "Stream Diffusion + Touch Designer. Episode 2",
+        "autor": "Anton Kiłka",
+        "date": "NOVEMBER 22, 2025",
+        "enlace_alltd": "https://alltd.org/stream-diffusion-touch-designer-episode-2/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/stream-diffusion-touch-designer-3-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=yCTdLY7R3Ts"
+    },
+    {
+        "id": "9",
+        "titulo": "Stream Diffusion + Touch Designer Episode 3",
+        "autor": "Anton Kiłka",
+        "date": "NOVEMBER 22, 2025",
+        "enlace_alltd": "https://alltd.org/stream-diffusion-touch-designer-episode-3/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/stream-diffusion-touch-designer-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=IThBhNnimdk"
+    },
+    {
+        "id": "10",
+        "titulo": "StreamDiffusion + TouchDesigner. Episode 1",
+        "autor": "Anton Kiłka",
+        "date": "NOVEMBER 22, 2025",
+        "enlace_alltd": "https://alltd.org/streamdiffusion-touchdesigner-episode-1/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/streamdiffusion-touchdesigner-ep-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=5Z2JMIpSj3o"
+    },
+    {
+        "id": "11",
+        "titulo": "Slit Scan | Project File .toe | #touchdesigner",
+        "autor": "sssynthomo",
+        "date": "NOVEMBER 22, 2025",
+        "enlace_alltd": "https://alltd.org/slit-scan-project-file-toe-touchdesigner/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/slit-scan-project-file-toe-touch-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=hzSArkK4TXI"
+    },
+    {
+        "id": "12",
+        "titulo": "Meu 3° Dia no TouchDesigner e Já Fiz Som com Carro Passando (sem saber como)",
+        "autor": "Élida Dutra",
+        "date": "NOVEMBER 22, 2025",
+        "enlace_alltd": "https://alltd.org/meu-3-dia-no-touchdesigner-e-ja-fiz-som-com-carro-passando-sem-saber-como/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/meu-3-dia-no-touchdesigner-e-ja-480x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=V5G2okZUrXs"
+    },
+    {
+        "id": "13",
+        "titulo": "TouchDesigner Quick Install Guide for Absolute Beginners | TouchDesigner零基础快速下载与安装教程",
+        "autor": "Depth Buffer Studio",
+        "date": "NOVEMBER 21, 2025",
+        "enlace_alltd": "https://alltd.org/touchdesigner-quick-install-guide-for-absolute-beginners-touchdesigner%e9%9b%b6%e5%9f%ba%e7%a1%80%e5%bf%ab%e9%80%9f%e4%b8%8b%e8%bd%bd%e4%b8%8e%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/touchdesigner-quick-install-guid-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=0GWrA2iGnLE"
+    },
+    {
+        "id": "14",
+        "titulo": "3D Animated Grid in TouchDesigner | Touch Designer Tutorial",
+        "autor": "Nova's Alt Account",
+        "date": "NOVEMBER 21, 2025",
+        "enlace_alltd": "https://alltd.org/3d-animated-grid-in-touchdesigner-touch-designer-tutorial/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/3d-animated-grid-in-touchdesigne-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=fGeqIWN5dlA"
+    },
+    {
+        "id": "15",
+        "titulo": "POPs Workshop | Particle System Simulating Gravity",
+        "autor": "Josef Pelz",
+        "date": "NOVEMBER 20, 2025",
+        "enlace_alltd": "https://alltd.org/pops-workshop-particle-system-simulating-gravity/",
+        "imagen": "https://alltd.org/wp-content/uploads/2025/11/pops-workshop-particle-system-si-636x358.jpg",
+        "url_video": "https://www.youtube.com/watch?v=HFZI4lS0mls"
+    },
+    {
+        "id": "16",
         "titulo": "Vector Fields Made Simple – TouchDesigner POPs Tutorial (Noise + Patterns)",
         "autor": "Okamirufu Vizualizer",
         "date": "NOVEMBER 18, 2025",
@@ -9,7 +153,7 @@
         "url_video": "https://www.youtube.com/watch?v=Lhq0XZoDP_o"
     },
     {
-        "id": "1",
+        "id": "17",
         "titulo": "TouchDesigner：MediaPipe Hands",
         "autor": "jan",
         "date": "NOVEMBER 18, 2025",
@@ -18,7 +162,7 @@
         "url_video": "https://www.youtube.com/watch?v=3muPhCVD0qk"
     },
     {
-        "id": "2",
+        "id": "18",
         "titulo": "Skin your Trails (or lines in general) | TouchDesigner Tutorial",
         "autor": "SARV",
         "date": "NOVEMBER 18, 2025",
@@ -27,7 +171,7 @@
         "url_video": "https://www.youtube.com/watch?v=TzC_3xxm2WM"
     },
     {
-        "id": "3",
+        "id": "19",
         "titulo": "TouchDesigner X11",
         "autor": "Mad eZmA",
         "date": "NOVEMBER 17, 2025",
@@ -36,7 +180,7 @@
         "url_video": "https://www.youtube.com/watch?v=TeKnQHKspUs"
     },
     {
-        "id": "4",
+        "id": "20",
         "titulo": "Procedural 3D Modelling with TouchDesigner",
         "autor": "jan",
         "date": "NOVEMBER 17, 2025",
@@ -45,7 +189,7 @@
         "url_video": "https://www.youtube.com/watch?v=oyZNUL9iZw0"
     },
     {
-        "id": "5",
+        "id": "21",
         "titulo": "Learn TouchDesigner in 73 Minutes",
         "autor": "Dean Cheesman",
         "date": "NOVEMBER 17, 2025",
@@ -54,7 +198,7 @@
         "url_video": "https://www.youtube.com/watch?v=gQdmocb-JBQ"
     },
     {
-        "id": "6",
+        "id": "22",
         "titulo": "Simple system to convert a 2D video into particles (TouchDesigner)",
         "autor": "Charlotte",
         "date": "NOVEMBER 16, 2025",
@@ -63,7 +207,7 @@
         "url_video": "https://www.youtube.com/watch?v=In502ZkVVi8"
     },
     {
-        "id": "7",
+        "id": "23",
         "titulo": "TouchDesigner 每週直播挑戰 #2 – 製作兒時記憶中的夢幻萬花筒",
         "autor": "哲宇寇汀吧 CheYu's Coding Bar",
         "date": "NOVEMBER 16, 2025",
@@ -72,7 +216,7 @@
         "url_video": "https://www.youtube.com/watch?v=Cht5n6rmibM"
     },
     {
-        "id": "8",
+        "id": "24",
         "titulo": "TouchDesigner Scatterplot – p.7 Workshop: Interactivity",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 15, 2025",
@@ -81,7 +225,7 @@
         "url_video": "https://www.youtube.com/watch?v=ojmnkhn352Q"
     },
     {
-        "id": "9",
+        "id": "25",
         "titulo": "TouchDEsigner VJツール「TOXBOX」基本機能紹介",
         "autor": "jan",
         "date": "NOVEMBER 15, 2025",
@@ -90,7 +234,7 @@
         "url_video": "https://www.youtube.com/watch?v=SHeJOBs7QTI"
     },
     {
-        "id": "10",
+        "id": "26",
         "titulo": "Track Any Movement Without Plugins — Simple & Accurate TouchDesigner Tutorial",
         "autor": "jan",
         "date": "NOVEMBER 14, 2025",
@@ -99,7 +243,7 @@
         "url_video": "https://www.youtube.com/watch?v=ig3j6dznRKU"
     },
     {
-        "id": "11",
+        "id": "27",
         "titulo": "TouchDesigner 每週直播挑戰 #2 – 製作兒時記憶中的夢幻萬花筒",
         "autor": "哲宇寇汀吧 CheYu's Coding Bar",
         "date": "NOVEMBER 14, 2025",
@@ -108,7 +252,7 @@
         "url_video": "https://www.youtube.com/watch?v=Cht5n6rmibM"
     },
     {
-        "id": "12",
+        "id": "28",
         "titulo": "TouchDesigner Scatterplot 9 – Workshop: Legend",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 13, 2025",
@@ -117,7 +261,7 @@
         "url_video": "https://www.youtube.com/watch?v=iePFwZ15r0c"
     },
     {
-        "id": "13",
+        "id": "29",
         "titulo": "TouchDesigner Scatterplot 4 – Workshop: Interactivity",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 13, 2025",
@@ -126,7 +270,7 @@
         "url_video": "https://www.youtube.com/watch?v=Z0vSmeAZzWE"
     },
     {
-        "id": "14",
+        "id": "30",
         "titulo": "TouchDesigner – 10XCC –  057",
         "autor": "LEVOXTRIP",
         "date": "NOVEMBER 13, 2025",
@@ -135,7 +279,7 @@
         "url_video": "https://www.youtube.com/watch?v=NHPpe4foCQw"
     },
     {
-        "id": "15",
+        "id": "31",
         "titulo": "TouchDesigner _07 Color Extract",
         "autor": "threedashes",
         "date": "NOVEMBER 13, 2025",
@@ -144,7 +288,7 @@
         "url_video": "https://www.youtube.com/watch?v=C_iBlxWSb2c"
     },
     {
-        "id": "16",
+        "id": "32",
         "titulo": "Easy Face Tracking in TouchDesigner",
         "autor": "Rob Duarte",
         "date": "NOVEMBER 13, 2025",
@@ -153,7 +297,7 @@
         "url_video": "https://www.youtube.com/watch?v=EKOYK891aBA"
     },
     {
-        "id": "17",
+        "id": "33",
         "titulo": "StreamDiffusion in TouchDesigner Workshop",
         "autor": "Daydream AI",
         "date": "NOVEMBER 12, 2025",
@@ -162,7 +306,7 @@
         "url_video": "https://www.youtube.com/watch?v=iLjksLHr2NI"
     },
     {
-        "id": "18",
+        "id": "34",
         "titulo": "PATCHDECK – Touchdesigner VJ Interface",
         "autor": "Jascha Süss",
         "date": "NOVEMBER 12, 2025",
@@ -171,7 +315,7 @@
         "url_video": "https://www.youtube.com/watch?v=XdMjis1aXNY"
     },
     {
-        "id": "19",
+        "id": "35",
         "titulo": "TouchDesigner Versions: How to Not Break Your Projects",
         "autor": "tekt",
         "date": "NOVEMBER 12, 2025",
@@ -180,7 +324,7 @@
         "url_video": "https://www.youtube.com/watch?v=GQqa0WuFqUk"
     },
     {
-        "id": "20",
+        "id": "36",
         "titulo": "TouchDesigner Linework Effect – Projection Mapping #2",
         "autor": "Ohm Visuals",
         "date": "NOVEMBER 11, 2025",
@@ -189,7 +333,7 @@
         "url_video": "https://www.youtube.com/watch?v=5oCMLPel79o"
     },
     {
-        "id": "21",
+        "id": "37",
         "titulo": "Recreating Retro CGI in TouchDesigner",
         "autor": "fxduke_108",
         "date": "NOVEMBER 11, 2025",
@@ -198,7 +342,7 @@
         "url_video": "https://www.youtube.com/watch?v=MGkNi31-1a0"
     },
     {
-        "id": "22",
+        "id": "38",
         "titulo": "Extra Forces and Smoky Particles in TouchDesigner – Tutorial",
         "autor": "audiodevout",
         "date": "NOVEMBER 11, 2025",
@@ -207,7 +351,7 @@
         "url_video": "https://www.youtube.com/watch?v=7A6_PazyKSw"
     },
     {
-        "id": "23",
+        "id": "39",
         "titulo": "TouchDesigner X10",
         "autor": "Mad eZmA",
         "date": "NOVEMBER 11, 2025",
@@ -216,7 +360,7 @@
         "url_video": "https://www.youtube.com/watch?v=2kPfKG_KjYY"
     },
     {
-        "id": "24",
+        "id": "40",
         "titulo": "TouchDesigner 3D粒子效果particle GPU [ 練習8-3：音訊與粒子特效練習]",
         "autor": "DoDo.funwork",
         "date": "NOVEMBER 11, 2025",
@@ -225,7 +369,7 @@
         "url_video": "https://www.youtube.com/watch?v=_1tsbR8XJhI"
     },
     {
-        "id": "25",
+        "id": "41",
         "titulo": "Twist POP in TouchDesigner",
         "autor": "Simon Alexander-Adams",
         "date": "NOVEMBER 11, 2025",
@@ -234,7 +378,7 @@
         "url_video": "https://www.youtube.com/watch?v=R43lYn6bXQc"
     },
     {
-        "id": "26",
+        "id": "42",
         "titulo": "TouchDesigner POPs Tutorial: Mathematical Shapes",
         "autor": "Axi0m",
         "date": "NOVEMBER 10, 2025",
@@ -243,7 +387,7 @@
         "url_video": "https://www.youtube.com/watch?v=Llusk-045OY"
     },
     {
-        "id": "27",
+        "id": "43",
         "titulo": "Interactive Mouse Tiles in TouchDesigner",
         "autor": "jan",
         "date": "NOVEMBER 10, 2025",
@@ -252,7 +396,7 @@
         "url_video": "https://www.youtube.com/watch?v=dU6JSBNC1SA"
     },
     {
-        "id": "28",
+        "id": "44",
         "titulo": "TouchDesigner 每週直播挑戰#1 – 結合 Ableton Live 把影像變演算音樂的魔法",
         "autor": "哲宇寇汀吧 CheYu's Coding Bar",
         "date": "NOVEMBER 9, 2025",
@@ -261,7 +405,7 @@
         "url_video": "https://www.youtube.com/watch?v=JfAAxnspHGk"
     },
     {
-        "id": "29",
+        "id": "45",
         "titulo": "Intro to Particle POP — TouchDesigner Tutorial",
         "autor": "caro villeneuve",
         "date": "NOVEMBER 8, 2025",
@@ -270,7 +414,7 @@
         "url_video": "https://www.youtube.com/watch?v=0vrEHtF6N3Q"
     },
     {
-        "id": "30",
+        "id": "46",
         "titulo": "How to Create Scene Transitions in TouchDesigner (2 Examples + allowCooking Trick)",
         "autor": "fxduke_108",
         "date": "NOVEMBER 8, 2025",
@@ -279,7 +423,7 @@
         "url_video": "https://www.youtube.com/watch?v=dyJkH7SaqBs"
     },
     {
-        "id": "31",
+        "id": "47",
         "titulo": "Собираем графический интерфейс в Touchdesigner",
         "autor": "IvanPtentsov",
         "date": "NOVEMBER 8, 2025",
@@ -288,7 +432,7 @@
         "url_video": "https://www.youtube.com/watch?v=RWnNAY8fIw8"
     },
     {
-        "id": "32",
+        "id": "48",
         "titulo": "TouchDesigner 3D粒子效果particle effect 2 [ 練習8-2：線狀發射器]",
         "autor": "DoDo.funwork",
         "date": "NOVEMBER 8, 2025",
@@ -297,7 +441,7 @@
         "url_video": "https://www.youtube.com/watch?v=RnWdYtIeF9o"
     },
     {
-        "id": "33",
+        "id": "49",
         "titulo": "TouchDesigner 3D粒子效果particle effect [ 練習8-1：球形發射器]",
         "autor": "DoDo.funwork",
         "date": "NOVEMBER 8, 2025",
@@ -306,7 +450,7 @@
         "url_video": "https://www.youtube.com/watch?v=qlFYPPQ1p5A"
     },
     {
-        "id": "34",
+        "id": "50",
         "titulo": "TouchDesigner 3D粒子效果particle GPU [ 練習8-3：音訊與粒子特效練習]",
         "autor": "DoDo.funwork",
         "date": "NOVEMBER 8, 2025",
@@ -315,7 +459,7 @@
         "url_video": "https://www.youtube.com/watch?v=Gdo_apwKkl0"
     },
     {
-        "id": "35",
+        "id": "51",
         "titulo": "Audio reactive animations in Touch Designer + Stream Diffusion + DayDream",
         "autor": "Ocean Radio Station",
         "date": "NOVEMBER 8, 2025",
@@ -324,7 +468,7 @@
         "url_video": "https://www.youtube.com/watch?v=1NAvsNmDIAI"
     },
     {
-        "id": "36",
+        "id": "52",
         "titulo": "Painting with Pixels: Turning Data into Color | TouchDesigner Tutorials",
         "autor": "TK MAC",
         "date": "NOVEMBER 7, 2025",
@@ -333,7 +477,7 @@
         "url_video": "https://www.youtube.com/watch?v=_Lyxct4PNs0"
     },
     {
-        "id": "37",
+        "id": "53",
         "titulo": "Tutorial control de visuales con un dispositivo MIDI en Touchdesigner.  1107 1",
         "autor": "trinidad",
         "date": "NOVEMBER 7, 2025",
@@ -342,7 +486,7 @@
         "url_video": "https://www.youtube.com/watch?v=oilWGCdtH08"
     },
     {
-        "id": "38",
+        "id": "54",
         "titulo": "Glowing Audio Visualizer (TouchDesigner Tutorial)",
         "autor": "Visual Systems",
         "date": "NOVEMBER 7, 2025",
@@ -351,7 +495,7 @@
         "url_video": "https://www.youtube.com/watch?v=jazCW0ocwGY"
     },
     {
-        "id": "39",
+        "id": "55",
         "titulo": "I yap about creative coding in TouchDesigner (mediocre tutorial)",
         "autor": "Charlotte",
         "date": "NOVEMBER 7, 2025",
@@ -360,7 +504,7 @@
         "url_video": "https://www.youtube.com/watch?v=AHVHUh0JJnk"
     },
     {
-        "id": "40",
+        "id": "56",
         "titulo": "Adding Depth: Controlling Two Axes of Motion in TouchDesigner",
         "autor": "TK MAC",
         "date": "NOVEMBER 6, 2025",
@@ -369,7 +513,7 @@
         "url_video": "https://www.youtube.com/watch?v=dYbpm4G9wsI"
     },
     {
-        "id": "41",
+        "id": "57",
         "titulo": "How to create Vapor Wave Geometry on Touch Designer",
         "autor": "Laser Sunday Studio",
         "date": "NOVEMBER 6, 2025",
@@ -378,7 +522,7 @@
         "url_video": "https://www.youtube.com/watch?v=9jxveZDwQRE"
     },
     {
-        "id": "42",
+        "id": "58",
         "titulo": "TouchDesigner DMX Hardware Walk Through",
         "autor": "Scott Perry",
         "date": "NOVEMBER 6, 2025",
@@ -387,7 +531,7 @@
         "url_video": "https://www.youtube.com/watch?v=7zwQTdMyOU8"
     },
     {
-        "id": "43",
+        "id": "59",
         "titulo": "TouchDesigner開發紀錄",
         "autor": "Zong",
         "date": "NOVEMBER 6, 2025",
@@ -396,7 +540,7 @@
         "url_video": "https://www.youtube.com/watch?v=30OnYxikSdk"
     },
     {
-        "id": "44",
+        "id": "60",
         "titulo": "Making Things Move in TouchDesigner – Your First Animation",
         "autor": "TK MAC",
         "date": "NOVEMBER 5, 2025",
@@ -405,7 +549,7 @@
         "url_video": "https://www.youtube.com/watch?v=BJMn7NtSY9s"
     },
     {
-        "id": "45",
+        "id": "61",
         "titulo": "Galactic Rock Formation Using TouchDesigner POPs – Point Generator & Noise Pop",
         "autor": "Okamirufu Vizualizer",
         "date": "NOVEMBER 5, 2025",
@@ -414,7 +558,7 @@
         "url_video": "https://www.youtube.com/watch?v=bsuy9yBRT9s"
     },
     {
-        "id": "46",
+        "id": "62",
         "titulo": "Bar Chart Race with Touchdesigner – Part 2 – Data visualization tutorial",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -423,7 +567,7 @@
         "url_video": "https://www.youtube.com/watch?v=vWoYFlWDm3I"
     },
     {
-        "id": "47",
+        "id": "63",
         "titulo": "Globe Population Map with TouchDesigner – Data visualization tutorial",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -432,7 +576,7 @@
         "url_video": "https://www.youtube.com/watch?v=3dfHZZ4nn2M"
     },
     {
-        "id": "48",
+        "id": "64",
         "titulo": "Pie chart with TouchDesigner – Part 3",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -441,7 +585,7 @@
         "url_video": "https://www.youtube.com/watch?v=PwkeaFf_6-Q"
     },
     {
-        "id": "49",
+        "id": "65",
         "titulo": "Pie chart with TouchDesigner – Part 1",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -450,7 +594,7 @@
         "url_video": "https://www.youtube.com/watch?v=ZDLGHMwob-M"
     },
     {
-        "id": "50",
+        "id": "66",
         "titulo": "Bar Chart Race with Touchdesigner – Data visualization tutorial",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -459,7 +603,7 @@
         "url_video": "https://www.youtube.com/watch?v=xmpK-Y2fcko"
     },
     {
-        "id": "51",
+        "id": "67",
         "titulo": "Pie chart with TouchDesigner – Part 2",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -468,7 +612,7 @@
         "url_video": "https://www.youtube.com/watch?v=wrjFLF0Qlmc"
     },
     {
-        "id": "52",
+        "id": "68",
         "titulo": "World Map with Touchdesigner Tutorial – Part 1: Countries and colot (Top1% Share income)",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -477,7 +621,7 @@
         "url_video": "https://www.youtube.com/watch?v=-VXTM1A3OFA"
     },
     {
-        "id": "53",
+        "id": "69",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 4: Main Plot (dots, colors, etc…)",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -486,7 +630,7 @@
         "url_video": "https://www.youtube.com/watch?v=fvs6YuaBcNE"
     },
     {
-        "id": "54",
+        "id": "70",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 6: Automate parameters",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -495,7 +639,7 @@
         "url_video": "https://www.youtube.com/watch?v=wPyCe9O0siM"
     },
     {
-        "id": "55",
+        "id": "71",
         "titulo": "Scatterplot Workshop with Touchdesigner – part 1: Cartesian Axes",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -504,7 +648,7 @@
         "url_video": "https://www.youtube.com/watch?v=cdj-p-X4Tog"
     },
     {
-        "id": "56",
+        "id": "72",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 8: Add categorical color",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -513,7 +657,7 @@
         "url_video": "https://www.youtube.com/watch?v=II6OMDkCGt4"
     },
     {
-        "id": "57",
+        "id": "73",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 10: Save with extensions",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -522,7 +666,7 @@
         "url_video": "https://www.youtube.com/watch?v=Q7kTRr-ty1E"
     },
     {
-        "id": "58",
+        "id": "74",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 5: Intro to extensions",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -531,7 +675,7 @@
         "url_video": "https://www.youtube.com/watch?v=1Hw9wPP2S1o"
     },
     {
-        "id": "59",
+        "id": "75",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 2: Thicks",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -540,7 +684,7 @@
         "url_video": "https://www.youtube.com/watch?v=gRu449hDRuQ"
     },
     {
-        "id": "60",
+        "id": "76",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 3: Title & Labels",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -549,7 +693,7 @@
         "url_video": "https://www.youtube.com/watch?v=skr7OmU-MDQ"
     },
     {
-        "id": "61",
+        "id": "77",
         "titulo": "Scatterplot Workshop with TouchDesigner – part 7: Add interactivity",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -558,7 +702,7 @@
         "url_video": "https://www.youtube.com/watch?v=SznLqqA4FBo"
     },
     {
-        "id": "62",
+        "id": "78",
         "titulo": "Scatterplot Workshop with Touchdesigner – part 0: Intro",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -567,7 +711,7 @@
         "url_video": "https://www.youtube.com/watch?v=UI5gsDDDxLk"
     },
     {
-        "id": "63",
+        "id": "79",
         "titulo": "World Map with Touchdesigner Tutorial – Part 2: Interactivity (Top1% Share income)",
         "autor": "TouchDesigner for Data Visualization",
         "date": "NOVEMBER 2, 2025",
@@ -576,7 +720,7 @@
         "url_video": "https://www.youtube.com/watch?v=Ctixpj-OUlo"
     },
     {
-        "id": "64",
+        "id": "80",
         "titulo": "Strange Attractors in TouchDesigner | Four-Wing Particle System with POPs",
         "autor": "VvirDev",
         "date": "NOVEMBER 2, 2025",
@@ -585,7 +729,7 @@
         "url_video": "https://www.youtube.com/watch?v=QMjPtyFf8qQ"
     },
     {
-        "id": "65",
+        "id": "81",
         "titulo": "Selective Blur / Glitch Portal Effect [TouchDesigner Tutorial]",
         "autor": "Xtal",
         "date": "NOVEMBER 2, 2025",
@@ -594,7 +738,7 @@
         "url_video": "https://www.youtube.com/watch?v=UQmJrCLyCfE"
     },
     {
-        "id": "66",
+        "id": "82",
         "titulo": "The TouchDesigner Artist / Developer Spectrum",
         "autor": "tekt",
         "date": "NOVEMBER 1, 2025",
@@ -603,7 +747,7 @@
         "url_video": "https://www.youtube.com/watch?v=j1S5rUTvXng"
     },
     {
-        "id": "67",
+        "id": "83",
         "titulo": "Touchdesigner 媒二乙 鄭涵如",
         "autor": "RU",
         "date": "NOVEMBER 1, 2025",
@@ -612,7 +756,7 @@
         "url_video": "https://www.youtube.com/watch?v=HsJpgsNShxU"
     },
     {
-        "id": "68",
+        "id": "84",
         "titulo": "TouchDesigner – 10XCC –  056",
         "autor": "LEVOXTRIP",
         "date": "NOVEMBER 1, 2025",
@@ -621,7 +765,7 @@
         "url_video": "https://www.youtube.com/watch?v=nMDNrnETb7U"
     },
     {
-        "id": "69",
+        "id": "85",
         "titulo": "Experiments with NVIDIA Flex Solver in TouchDesigner",
         "autor": "audiodevout",
         "date": "NOVEMBER 1, 2025",
@@ -630,7 +774,7 @@
         "url_video": "https://www.youtube.com/watch?v=6QdLMXyzyuY"
     },
     {
-        "id": "70",
+        "id": "86",
         "titulo": "Python Transitions – State Machine – Pycharm and TouchDesigner Troubleshooting",
         "autor": "Joe Good",
         "date": "NOVEMBER 1, 2025",
@@ -639,7 +783,7 @@
         "url_video": "https://www.youtube.com/watch?v=vEPMBY-JlRA"
     },
     {
-        "id": "71",
+        "id": "87",
         "titulo": "Touchdesigner |Moving Text",
         "autor": "jan",
         "date": "NOVEMBER 1, 2025",
@@ -648,7 +792,7 @@
         "url_video": "https://www.youtube.com/watch?v=bZ2rAFfiMEE"
     },
     {
-        "id": "72",
+        "id": "88",
         "titulo": "Moon Surface Noise Using TouchDesigner POPs",
         "autor": "Okamirufu Vizualizer",
         "date": "OCTOBER 31, 2025",
@@ -657,156 +801,12 @@
         "url_video": "https://www.youtube.com/watch?v=rLuFBhFJhVU"
     },
     {
-        "id": "73",
+        "id": "89",
         "titulo": "GLSL for POPs in TouchDesigner: Lesson 4 (GLSL Copy POP + Phyllotaxis)",
         "autor": "Lake Heckaman",
         "date": "OCTOBER 31, 2025",
         "enlace_alltd": "https://alltd.org/glsl-for-pops-in-touchdesigner-lesson-4-glsl-copy-pop-phyllotaxis/",
         "imagen": "https://alltd.org/wp-content/uploads/2025/10/glsl-for-pops-in-touchdesigner-l-2-636x358.jpg",
         "url_video": "https://www.youtube.com/watch?v=k0KLIh1fp4M"
-    },
-    {
-        "id": "74",
-        "titulo": "DMS3 Class Recording at RMIT Vietnam (Introduction to Touchdesigner)",
-        "autor": "Patrick Hartono",
-        "date": "OCTOBER 31, 2025",
-        "enlace_alltd": "https://alltd.org/dms3-class-recording-at-rmit-vietnam-introduction-to-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/dms3-class-recording-at-rmit-vie-480x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=jBG_ZtOaw4Q"
-    },
-    {
-        "id": "75",
-        "titulo": "Dragging and dropping jigsaw puzzle pieces in Touchdesigner",
-        "autor": "Rob Duarte",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/dragging-and-dropping-jigsaw-puzzle-pieces-in-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/dragging-and-dropping-jigsaw-puz-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=eGN4fR6L2MQ"
-    },
-    {
-        "id": "76",
-        "titulo": "QUICK POPS STRANGE ATTRACTORS – TouchDesigner TUTORIAL",
-        "autor": "Supermarket Sallad",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/quick-pops-strange-attractors-touchdesigner-tutorial/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/quick-pops-strange-attractors-to-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=whpNUnZvvFg"
-    },
-    {
-        "id": "77",
-        "titulo": "Loop a noise Animation | Blender | After Effects | Touchdesigner",
-        "autor": "Protobacillus",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/loop-a-noise-animation-blender-after-effects-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/loop-a-noise-animation-blender-a-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=YcTYLEtUDzI"
-    },
-    {
-        "id": "78",
-        "titulo": "Touchdesigner Tutorial | Proximity POP",
-        "autor": "caro villeneuve",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/touchdesigner-tutorial-proximity-pop/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/touchdesigner-tutorial-proximity-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=JcXQB3v90X0"
-    },
-    {
-        "id": "79",
-        "titulo": "Cómo controlar instrumentos con FL studio usando Kinect y Touchdesigner",
-        "autor": "Alejandro Quintero",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/como-controlar-instrumentos-con-fl-studio-usando-kinect-y-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/como-controlar-instrumentos-con-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=U_bQJWEWEnk"
-    },
-    {
-        "id": "80",
-        "titulo": "Tutorial collage flotante en TouchDesigner",
-        "autor": "Ana :^",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/tutorial-collage-flotante-en-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/tutorial-collage-flotante-en-tou-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=-GLATDrjQwE"
-    },
-    {
-        "id": "81",
-        "titulo": "Student Project: Breanna Lorraine – Building a Live VJ Rig in TouchDesigner",
-        "autor": "Music Hackspace",
-        "date": "OCTOBER 30, 2025",
-        "enlace_alltd": "https://alltd.org/student-project-breanna-lorraine-building-a-live-vj-rig-in-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/student-project-breanna-lorraine-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=UTFcFLYkHF4"
-    },
-    {
-        "id": "82",
-        "titulo": "Voronoi Tool in TouchDesigner",
-        "autor": "Diogo",
-        "date": "OCTOBER 29, 2025",
-        "enlace_alltd": "https://alltd.org/voronoi-tool-in-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/voronoi-tool-in-touchdesigner-480x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=aU5QVFsLFkA"
-    },
-    {
-        "id": "83",
-        "titulo": "Neon Tunnel Effect – TouchDesigner Tutorial (Beginner Friendly!)",
-        "autor": "Visual Systems",
-        "date": "OCTOBER 28, 2025",
-        "enlace_alltd": "https://alltd.org/neon-tunnel-effect-touchdesigner-tutorial-beginner-friendly/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/neon-tunnel-effect-touchdesigner-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=Zf7aC4Us0gg"
-    },
-    {
-        "id": "84",
-        "titulo": "VP(TouchDesigner) A2",
-        "autor": "__ghosthouse",
-        "date": "OCTOBER 28, 2025",
-        "enlace_alltd": "https://alltd.org/vptouchdesigner-a2/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/vptouchdesigner-a2-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=lRZsfyJtFSU"
-    },
-    {
-        "id": "85",
-        "titulo": "In TouchDesigner, you can create this organic noise feedback effect with just a few nodes",
-        "autor": "Okamirufu Clips",
-        "date": "OCTOBER 28, 2025",
-        "enlace_alltd": "https://alltd.org/in-touchdesigner-you-can-create-this-organic-noise-feedback-effect-with-just-a-few-nodes/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/in-touchdesigner-you-can-create-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=gMehS5ac7ZY"
-    },
-    {
-        "id": "86",
-        "titulo": "Using your own color palette in TouchDesigner",
-        "autor": "Rob Duarte",
-        "date": "OCTOBER 28, 2025",
-        "enlace_alltd": "https://alltd.org/using-your-own-color-palette-in-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/using-your-own-color-palette-in-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=ZMXoUWXb69o"
-    },
-    {
-        "id": "87",
-        "titulo": "Audio Reactive GLSL Shaders in TouchDesigner",
-        "autor": "jan",
-        "date": "OCTOBER 27, 2025",
-        "enlace_alltd": "https://alltd.org/audio-reactive-glsl-shaders-in-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/audio-reactive-glsl-shaders-in-t-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=1pO8rA-vvUo"
-    },
-    {
-        "id": "88",
-        "titulo": "جلسه 21 آموزش نرم افزار Touchdesigner – Particle system ( part 2)",
-        "autor": "babak heidari",
-        "date": "OCTOBER 27, 2025",
-        "enlace_alltd": "https://alltd.org/%d8%ac%d9%84%d8%b3%d9%87-21-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%86%d8%b1%d9%85-%d8%a7%d9%81%d8%b2%d8%a7%d8%b1-touchdesigner-particle-system-part-2/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/21-touchdesigner-particle-sy-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=5u3zuRfvY1Q"
-    },
-    {
-        "id": "89",
-        "titulo": "Tutorial efecto dementor TouchDesigner",
-        "autor": "Valeria Agudelo Sánchez",
-        "date": "OCTOBER 27, 2025",
-        "enlace_alltd": "https://alltd.org/tutorial-efecto-dementor-touchdesigner/",
-        "imagen": "https://alltd.org/wp-content/uploads/2025/10/tutorial-efecto-dementor-touchde-636x358.jpg",
-        "url_video": "https://www.youtube.com/watch?v=qVrJea4s53k"
     }
 ]
