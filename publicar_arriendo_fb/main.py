@@ -13,22 +13,26 @@ import time
 from dotenv import load_dotenv
 from utils.iniciar_session import iniciar_session
 import os
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+
 
 
 load_dotenv()
 
 
-
-
-chrome_options = Options()
+chrome_options =  webdriver.ChromeOptions()
 
 # Si estás en entorno sin GUI (como GitHub Actions), activa headless
 
 chrome_options.add_argument('--headless')              # Corre en modo headless
 chrome_options.add_argument('--disable-gpu')           # Previene errores en entorno CI
-chrome_options.add_argument('--no-sandbox')            # Útil en contenedores
+chrome_options.add_argument('--no-sandbox')   # Útil en contenedores
+
 driver = webdriver.Chrome(
-    service=Service(ChromeDriverManager().install()),
+    service=Service(ChromeDriverManager(driver_version="143.0.7499.170").install()),
     options=chrome_options
 )
 
@@ -42,8 +46,7 @@ driver.get('https://web.facebook.com/?_rdc=1&_rdr')
 
 LINK_GROUP = "https://web.facebook.com/groups/692338427471692/"
 
-TEXTO_DESCRIPCION = """
-Arriendo acogedor departamento interior tipo departamento en Puerto Varas
+TEXTO_DESCRIPCION = """Arriendo acogedor departamento interior tipo departamento en Puerto Varas
 Ubicado en el segundo nivel, con entrada independiente, en un barrio tranquilo (Villa Los Presidentes), muy cerca del centro, clínica y Tur Bus. Ideal para quienes buscan comodidad y privacidad.
 Características:
 Máximo 4 pasajeros
@@ -65,10 +68,12 @@ Reja de protección en la entrada para niños pequeños
 
 No se arrienda por año corrido
 
-Tarifa: $50.000 por noche
+Tarifa: $60.000 por noche
 Dueña: Margarita
 Contacto: +56 9 99479312
 Interesados, llamar directamente al número telefónico
+
+Más información: https://dept.mtsprz.org
 """
 
 

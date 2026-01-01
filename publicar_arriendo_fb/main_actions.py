@@ -39,8 +39,7 @@ driver = webdriver.Firefox(
 LINK_GROUP = "https://web.facebook.com/groups/676990837721174/"
 
 
-TEXTO_DESCRIPCION = """
-Arriendo acogedor departamento interior tipo departamento en Puerto Varas
+TEXTO_DESCRIPCION = """Arriendo acogedor departamento interior tipo departamento en Puerto Varas
 Ubicado en el segundo nivel, con entrada independiente, en un barrio tranquilo (Villa Los Presidentes), muy cerca del centro, clínica y Tur Bus. Ideal para quienes buscan comodidad y privacidad.
 Características:
 Máximo 4 pasajeros
