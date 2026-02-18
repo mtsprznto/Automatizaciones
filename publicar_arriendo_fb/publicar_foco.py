@@ -37,10 +37,6 @@ driver = webdriver.Chrome(
 )
 
 
-#driver = webdriver.Chrome()
-driver.get('https://web.facebook.com/?_rdc=1&_rdr')
-
-
 
 
 # Modificar esto para que sea un array de links
@@ -98,9 +94,9 @@ Control remoto con pilas incluidas.
 Kit de pernos de anclaje.
 
 Promociones:
-- 1 unidad: $35.000
-2 unidades por: $64.990
-4 unidades por: $119.990
+- 1 unidad: $33.000
+2 unidades por: $62.990
+4 unidades por: $117.990
 
 Entregas: Retiro en Puerto Varas. Realizamos envíos a domicilio (consultar recargo según zona) y envíos a regiones por pagar vía Starken o Blue Express.
 
