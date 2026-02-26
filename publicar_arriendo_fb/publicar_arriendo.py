@@ -1,5 +1,3 @@
-import os
-import sys
 import time
 import logging
 from pathlib import Path
@@ -11,7 +9,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.chrome.service import Service as ChromeService 
 # WebDriver Manager
 from webdriver_manager.chrome import ChromeDriverManager
@@ -23,43 +20,34 @@ from utils.iniciar_session import iniciar_session
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-TEXTO_DESCRIPCION = """FOCO SOLAR LED 1200W PROFESIONAL - SERIE ZHU - PROTECCIÓN CLIMÁTICA IP67
+TEXTO_DESCRIPCION = """Arriendo acogedor departamento interior tipo departamento en Puerto Varas
+Ubicado en el segundo nivel, con entrada independiente, en un barrio tranquilo (Villa Los Presidentes), muy cerca del centro, clínica y Tur Bus. Ideal para quienes buscan comodidad y privacidad.
+Características:
+Máximo 4 pasajeros
+A 5 min del centro en auto, con locomoción a la puerta
+Entrada desde 14:00 hrs / Salida hasta 12:00 hrs
+Equipamiento:
+Calefacción eficiente: cuenta con Toyotomi y sistema de combustión lenta, incluye leña
+Lavadora disponible en el departamento
+Living-comedor acogedor con sofá cama y TV cable
+Cocina equipada (microondas, loza y utensilios)
 
-Asegure la visibilidad y seguridad de su parcela con tecnología de iluminación autónoma diseñada específicamente para resistir las condiciones extremas del sur de Chile. Este equipo industrial ofrece una solución definitiva contra la oscuridad, con costo operativo cero.
+Dos dormitorios:
+- 1 dormitorio con cama matrimonial
+1 dormitorio con dos camas de plaza
 
-CERTIFICACIÓN Y GARANTÍA TÉCNICA
-- Resistencia Sellada IP67: Blindaje total contra lluvia intensa, ráfagas de viento y humedad persistente.
-Garantía de Fábrica: Respaldo de 2 años detallado en empaque oficial.
-Stock Local: Entrega inmediata en Puerto Varas (Sin esperas de envío desde Santiago).
 
-ESPECIFICACIONES DE ALTO RENDIMIENTO
-- Potencia Lumínica: 1200W con tecnología LED de alta eficiencia.
-Gestión Energética: Carga fotovoltaica automática durante el día y activación inteligente por sensor al anochecer.
-Autonomía Reforzada: Batería interna de larga duración para funcionamiento ininterrumpido.
-Instalación Simplificada: Sistema inalámbrico que no requiere cableados subterráneos ni técnicos eléctricos.
+Wifi disponible
+Reja de protección en la entrada para niños pequeños
 
-KIT DE INSTALACIÓN COMPLETO (LO QUE RECIBE)
-1. Foco LED ZHU 1200W con panel solar integrado de alto impacto.
-Brazo de soporte metálico estructural para poste o pared.
-Control remoto de largo alcance para configuración de modos y potencia.
-Kit de pernos de anclaje de alta resistencia.
-Pilas incluidas para el mando a distancia.
+No se arrienda por año corrido
 
-PRECIOS COMPETITIVOS (INVERSIÓN ÚNICA)
-- Valor Individual: $29.990 (Mejor precio garantizado en la zona).
-Pack Seguridad (2 Unidades): $56.990.
-Pack Perímetro Total (4 Unidades): $109.990.
+Tarifa: $50.000 por noche
+Dueña: Margarita
+Contacto: +56 9 99479312
+Interesados, llamar directamente al número telefónico
 
-GESTIÓN DE ENTREGA Y CONTACTO
-- Retiro Presencial: Punto de entrega céntrico en Puerto Varas para su comodidad.
-Despachos Locales: Consultar tarifa para entrega a domicilio en radio urbano y alrededores.
-Envíos a Regiones: Despacho diario vía Starken o Blue Express (por pagar).
-
-SOLICITE SU PEDIDO POR WHATSAPP:
-Contacto: +56975475781
-Enlace directo: https://wa.me/56975475781
-
-Equipos probados y garantizados para el clima de la Región de Los Lagos. Stock limitado para entrega esta semana.
+Más información: https://dept.mtsprz.org
 """
 
 
@@ -78,9 +66,9 @@ def setup_driver():
     chrome_options.add_experimental_option('useAutomationExtension', False)
     
     # IMPORTANTE: Para Docker/Binance necesitarás estos:
-    #chrome_options.add_argument('--headless') # Descomenta para Docker
-    #chrome_options.add_argument('--no-sandbox')
-    #chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--headless') # Descomenta para Docker
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
 
     try:
         driver = webdriver.Chrome(options=chrome_options)
@@ -96,12 +84,12 @@ def publicar_en_grupos():
     
     # 1. Configuración de Rutas (Mejor práctica que usar strings planos)
     BASE_DIR = Path(__file__).resolve().parent
+    
     URL_LIST = [
-        BASE_DIR / "image/foco/foco.jpeg",
-        BASE_DIR / "image/foco/foco_.jpeg",
-        BASE_DIR / "image/foco/foco_posicion.jpeg",
-        BASE_DIR / "image/foco/referencia_ia.jpeg",
-        BASE_DIR / "image/foco/img_ia.jpeg",
+        BASE_DIR / "image/1.png",
+        BASE_DIR / "image/2.png",
+        BASE_DIR / "image/3.png",
+        BASE_DIR / "image/4.png"
     ]
 
     LINK_GROUPS = [
@@ -154,6 +142,11 @@ def publicar_en_grupos():
 
                 logger.info(f"Procesando grupo: {link}")
                 driver.get(link_clean)
+
+                if "Contenido no encontrado" in driver.page_source or "Content not found" in driver.page_source:
+                    logger.warning(f"❌ Grupo inaccesible o eliminado: {link}. Omitiendo...")
+                    continue
+
                 if len(driver.find_elements(By.NAME, "email")) > 0:
                     logger.warning("⚠️ Sesión perdida al entrar al grupo. Reintentando login...")
                     iniciar_session(driver)
