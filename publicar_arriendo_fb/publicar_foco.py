@@ -161,36 +161,38 @@ def publicar_en_grupos():
                     iniciar_session(driver)
                     driver.get(link_clean)
 
-                wait = WebDriverWait(driver, 20)
-
+                wait = WebDriverWait(driver, 10)
                 # Paso 1: Click en "¿Qué estás pensando?"
                 xpath_escribe = "//div[@role='button']//span[contains(text(), 'Escribe algo') or contains(text(), 'Write something')]"
-                elemento = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_escribe)))
-                driver.execute_script("arguments[0].click();", elemento)
-
-                #_----------------------------------
-                # Paso 2: Insertar Texto (Ajustado para evitar comentarios ajenos)
-                # Buscamos el textbox que tenga el aria-placeholder correcto
-                xpath_editor = "//div[@role='textbox' and (contains(@aria-placeholder, 'Crea una publicación') or contains(@aria-placeholder, 'Create a public post'))]"
-
+                
                 try:
-                    # Aseguramos que el editor esté visible y sea el del modal
-                    editor = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_editor)))
-                    
-                    # Hacemos click previo para ganar el foco
-                    driver.execute_script("arguments[0].click();", editor)
-                    time.sleep(1)
-                    
-                    # Insertar el texto
-                    editor.send_keys(TEXTO_DESCRIPCION)
-                    logger.info("✅ Texto insertado correctamente en el modal de publicación.")
-                    
-                except Exception as e:
-                    logger.warning("No se encontró el textbox con aria-placeholder, intentando respaldo...")
-                    # Respaldo: Buscar el textbox que NO esté dentro de un comentario (basado en clases de contenedor de post)
-                    xpath_respaldo = "//div[@role='dialog']//div[@contenteditable='true' and @role='textbox']"
-                    editor = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_respaldo)))
-                    editor.send_keys(TEXTO_DESCRIPCION)
+                    elemento = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_escribe)))
+                    driver.execute_script("arguments[0].click();", elemento)
+                except Exception:
+                    logger.warning(f"⚠️ Formato incompatible u omitido en {link}")
+                    continue
+                
+
+                wait_modal = WebDriverWait(driver, 10)
+                xpath_editor = "//div[@role='textbox' and (contains(@aria-placeholder, 'Crea una publicación') or contains(@aria-placeholder, 'Create a public post'))]"
+                
+                try:
+                    try:
+                        # Plan A
+                        editor = wait_modal.until(EC.element_to_be_clickable((By.XPATH, xpath_editor)))
+                        driver.execute_script("arguments[0].click();", editor)
+                        time.sleep(1)
+                        editor.send_keys(TEXTO_DESCRIPCION)
+                    except Exception:
+                        # Plan B: Respaldo
+                        logger.warning("Buscando textbox de respaldo...")
+                        xpath_respaldo = "//div[@role='dialog']//div[@contenteditable='true' and @role='textbox']"
+                        editor = wait_modal.until(EC.element_to_be_clickable((By.XPATH, xpath_respaldo)))
+                        editor.send_keys(TEXTO_DESCRIPCION)
+                except Exception:
+                    logger.error(f"❌ No se pudo escribir en el modal de {link}. Saltando...")
+                    continue
+
                 #-------------------------------------
                 # Paso 3: Subir Imágenes (Directo al input oculto)
                 # Facebook suele tener un input tipo file oculto. Es más rápido enviarlo ahí.

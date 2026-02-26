@@ -147,46 +147,45 @@ def publicar_en_grupos():
                     logger.warning(f"❌ Grupo inaccesible o eliminado: {link}. Omitiendo...")
                     continue
 
-                if len(driver.find_elements(By.NAME, "email")) > 0:
-                    logger.warning("⚠️ Sesión perdida al entrar al grupo. Reintentando login...")
-                    iniciar_session(driver)
-                    driver.get(link_clean)
 
-                wait = WebDriverWait(driver, 20)
-
-                # Paso 1: Click en "¿Qué estás pensando?"
+                wait_fast = WebDriverWait(driver, 5)
                 xpath_escribe = "//div[@role='button']//span[contains(text(), 'Escribe algo') or contains(text(), 'Write something')]"
-                elemento = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_escribe)))
-                driver.execute_script("arguments[0].click();", elemento)
+                
+                try:
+                    elemento = wait_fast.until(EC.element_to_be_clickable((By.XPATH, xpath_escribe)))
+                    driver.execute_script("arguments[0].click();", elemento)
+                except Exception:
+                    logger.warning(f"⚠️ Formato incompatible (posible grupo de venta) en {link}. Omitiendo...")
+                    continue # <--- AQUÍ SALTA AL SIGUIENTE LINK SIN DETENERSE
 
-                #_----------------------------------
-                # Paso 2: Insertar Texto (Ajustado para evitar comentarios ajenos)
-                # Buscamos el textbox que tenga el aria-placeholder correcto
+                # 3. INSERTAR TEXTO
+                wait_modal = WebDriverWait(driver, 10)
                 xpath_editor = "//div[@role='textbox' and (contains(@aria-placeholder, 'Crea una publicación') or contains(@aria-placeholder, 'Create a public post'))]"
 
                 try:
-                    # Aseguramos que el editor esté visible y sea el del modal
-                    editor = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_editor)))
-                    
-                    # Hacemos click previo para ganar el foco
-                    driver.execute_script("arguments[0].click();", editor)
-                    time.sleep(1)
-                    
-                    # Insertar el texto
-                    editor.send_keys(TEXTO_DESCRIPCION)
-                    logger.info("✅ Texto insertado correctamente en el modal de publicación.")
+                    try:
+                        # Intento Principal
+                        editor = wait_modal.until(EC.element_to_be_clickable((By.XPATH, xpath_editor)))
+                        driver.execute_script("arguments[0].click();", editor)
+                        time.sleep(1)
+                        editor.send_keys(TEXTO_DESCRIPCION)
+                        logger.info("✅ Texto insertado correctamente.")
+                    except Exception:
+                        # Intento de Respaldo
+                        logger.warning("Intentando respaldo para el textbox...")
+                        xpath_respaldo = "//div[@role='dialog']//div[@contenteditable='true' and @role='textbox']"
+                        editor = wait_modal.until(EC.element_to_be_clickable((By.XPATH, xpath_respaldo)))
+                        editor.send_keys(TEXTO_DESCRIPCION)
+                        logger.info("✅ Texto insertado (usando respaldo).")
                     
                 except Exception as e:
-                    logger.warning("No se encontró el textbox con aria-placeholder, intentando respaldo...")
-                    # Respaldo: Buscar el textbox que NO esté dentro de un comentario (basado en clases de contenedor de post)
-                    xpath_respaldo = "//div[@role='dialog']//div[@contenteditable='true' and @role='textbox']"
-                    editor = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_respaldo)))
-                    editor.send_keys(TEXTO_DESCRIPCION)
+                    # SI AMBOS FALLAN: Omitimos el grupo por completo
+                    logger.error(f"❌ Imposible encontrar campo de texto en {link}. Saltando grupo...")
+                    continue # <--- Esto evita que llegue al pdb.set_trace() de abajo
                 #-------------------------------------
                 # Paso 3: Subir Imágenes (Directo al input oculto)
                 # Facebook suele tener un input tipo file oculto. Es más rápido enviarlo ahí.
-                input_file = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@type='file' and @multiple]")))
-                
+                input_file = wait_modal.until(EC.presence_of_element_located((By.XPATH, "//input[@type='file' and @multiple]")))
                 rutas_validas = [str(p) for p in URL_LIST if p.exists()]
                 if rutas_validas:
                     # Se pueden enviar todas juntas separadas por un salto de línea en Windows
@@ -197,7 +196,7 @@ def publicar_en_grupos():
 
                 # Paso 4: Publicar
                 btn_publicar = "//div[@role='button' and @aria-label='Publicar']"
-                boton = wait.until(EC.element_to_be_clickable((By.XPATH, btn_publicar)))
+                boton = wait_modal.until(EC.element_to_be_clickable((By.XPATH, btn_publicar)))
                 driver.execute_script("arguments[0].click();", boton)
                 
                 logger.info("🚀 Publicación enviada.")
