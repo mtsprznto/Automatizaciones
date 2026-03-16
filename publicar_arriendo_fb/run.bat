@@ -14,4 +14,3 @@ python publicar_arriendo.py
 
 echo.
 echo ✅ Proceso finalizado.
-pause

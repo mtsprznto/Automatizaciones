@@ -14,4 +14,3 @@ python publicar_foco.py
 
 echo.
 echo ✅ Proceso finalizado.
-pause
