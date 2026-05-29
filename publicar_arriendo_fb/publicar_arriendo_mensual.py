@@ -5,6 +5,7 @@ import shutil
 import tempfile
 from pathlib import Path
 from dotenv import load_dotenv
+import pyperclip
 
 # Selenium imports
 from selenium import webdriver
@@ -23,34 +24,34 @@ from utils.iniciar_session import iniciar_session
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-TEXTO_DESCRIPCION = """Arriendo acogedor departamento interior tipo departamento en Puerto Varas
-Ubicado en el segundo nivel, con entrada independiente, en un barrio tranquilo (Villa Los Presidentes), muy cerca del centro, clínica y Tur Bus. Ideal para quienes buscan comodidad y privacidad.
-Características:
-Máximo 4 pasajeros
-A 5 min del centro en auto, con locomoción a la puerta
-Entrada desde 14:00 hrs / Salida hasta 12:00 hrs
+TEXTO_DESCRIPCION = """ARRIENDO DEPARTAMENTO AMOBLADO VILLA LOS PRESIDENTES, PUERTO VARAS
+
+Acogedor departamento amoblado en segundo piso de una casa, con entrada independiente y mucha privacidad. Ideal para pareja o grupo de hasta 4 personas (mismo precio).
+
+- $550.000 mensuales 
+- incluye internet y agua (Luz y gas por cuenta del arrendatario)
+
+Distribución: 🛏️ 2 dormitorios
+- 1 con cama matrimonial
+- 1 con 2 camas de plaza 🚿 Baño 🛋️ Completamente amoblado, listo para llegar a vivir
+
 Equipamiento:
-Calefacción eficiente: cuenta con Toyotomi y sistema de combustión lenta, incluye leña
-Lavadora disponible en el departamento
-Living-comedor acogedor con sofá cama y TV cable
-Cocina equipada (microondas, loza y utensilios)
+- Calefacción Toyotomi a parafina y estufa a leña (leña no incluida) — abrigado para el invierno del sur 
+Lavadora
+- Muebles incluidos
+- Estacionamiento en la calle (sector tranquilo, todos los vecinos dejan sus autos afuera)
+- Muy buena iluminación natural
+- A 5 minutos del centro de Puerto Varas en vehículo
 
-Dos dormitorios:
-- 1 dormitorio con cama matrimonial
-1 dormitorio con dos camas de plaza
+Condiciones:
+- Requisitos: 6 últimas cotizaciones de AFP o contrato de trabajo
+- 1 mes de garantía
+- No se aceptan mascotas
 
+Contacto directo:
+Dueña: Margarita — +56 9 9947 9312
 
-Wifi disponible
-Reja de protección en la entrada para niños pequeños
-
-No se arrienda por año corrido
-
-Tarifa: $50.000 por noche
-Dueña: Margarita
-Contacto: +56 9 99479312
-Interesados, llamar directamente al número telefónico
-
-Más información: https://dept.mtsprz.org
+Interesados, llamar directamente al número telefónico.
 """
 
 
@@ -60,7 +61,9 @@ COOKIES_FILE = Path(__file__).resolve().parent / "fb_cookies.json"
 def setup_driver():
     chrome_options = Options()
 
+    # Perfil temporal fresco cada run — cero problemas de lock entre runs
     temp_dir = tempfile.mkdtemp(prefix="fb_selenium_")
+
     chrome_options.add_argument(f"user-data-dir={temp_dir}")
     chrome_options.add_argument('--disable-blink-features=AutomationControlled')
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
@@ -115,10 +118,9 @@ def publicar_en_grupos():
     BASE_DIR = Path(__file__).resolve().parent
     
     URL_LIST = [
-        BASE_DIR / "image/1.png",
-        BASE_DIR / "image/2.png",
-        BASE_DIR / "image/3.png",
-        BASE_DIR / "image/4.png"
+        BASE_DIR / "image/arriendo_mensual/2.png",
+        BASE_DIR / "image/arriendo_mensual/3.png",
+        BASE_DIR / "image/arriendo_mensual/4.png"
     ]
 
     LINK_GROUPS = [
@@ -160,13 +162,14 @@ def publicar_en_grupos():
     driver = setup_driver()
 
     try:
+        # Intentar restaurar sesión desde cookies guardadas
         if not cargar_cookies(driver):
             logger.info("Sin cookies válidas — haciendo login completo...")
             iniciar_session(driver)
             guardar_cookies(driver)
             time.sleep(5)
         else:
-            guardar_cookies(driver)
+            guardar_cookies(driver)  # actualizar cookies con los tokens frescos
 
         logger.info("Esperando 5 segundos para que la sesión se estabilice...")
         time.sleep(5)
@@ -193,11 +196,13 @@ def publicar_en_grupos():
                     logger.warning(f"⚠️ Formato incompatible (posible grupo de venta) en {link}. Omitiendo...")
                     continue # <--- AQUÍ SALTA AL SIGUIENTE LINK SIN DETENERSE
 
-                time.sleep(5)
+                time.sleep(5)  # esperar que modal cargue completamente
 
-                # 3. INSERTAR TEXTO — find_elements directo (WebDriverWait falla con contenteditable="")
+                # 3. INSERTAR TEXTO
+                # Buscar con find_elements directo — WebDriverWait falla con contenteditable=""
+                # porque el XPath @contenteditable='true' no matchea el atributo vacío del HTML.
                 editor = None
-                KEYWORDS_PLACEHOLDER = ['publicaci', 'public post', 'crea una']
+                KEYWORDS_PLACEHOLDER = ['publicaci', 'public post', 'public post', 'crea una']
                 for intento in range(3):
                     candidatos = driver.find_elements(By.XPATH, "//div[@role='textbox']")
                     for el in candidatos:
@@ -215,15 +220,22 @@ def publicar_en_grupos():
                     continue
 
                 try:
+                    # Clipboard: preserva emojis (BMP) Y saltos de línea
+                    pyperclip.copy(TEXTO_DESCRIPCION)
                     driver.execute_script("arguments[0].click();", editor)
                     time.sleep(1)
-                    editor.send_keys(TEXTO_DESCRIPCION)
+                    from selenium.webdriver.common.action_chains import ActionChains
+                    from selenium.webdriver.common.keys import Keys
+                    ActionChains(driver).key_down(Keys.CONTROL).send_keys('a').key_up(Keys.CONTROL).perform()
+                    ActionChains(driver).key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
+                    time.sleep(0.5)
                     logger.info("✅ Texto insertado correctamente.")
                 except Exception as e:
                     logger.error(f"❌ Error insertando texto: {e}. Saltando grupo...")
                     continue
                 #-------------------------------------
                 # Paso 3: Subir Imágenes (Directo al input oculto)
+                # Facebook suele tener un input tipo file oculto. Es más rápido enviarlo ahí.
                 wait_modal = WebDriverWait(driver, 10)
                 input_file = wait_modal.until(EC.presence_of_element_located((By.XPATH, "//input[@type='file' and @multiple]")))
                 rutas_validas = [str(p) for p in URL_LIST if p.exists()]

@@ -62,20 +62,34 @@ Equipos probados y garantizados para el clima de la Región de Los Lagos. Stock 
 
 def setup_driver():
     chrome_options = Options()
-    
+
     # --- CAMBIO PARA ESCALABILIDAD Y PERSISTENCIA ---
     # Esto crea una carpeta 'perfil_fb' donde se guardará tu sesión
     # Así no te pedirá login cada vez que reinicies el script
     script_dir = Path(__file__).resolve().parent
     user_data_dir = script_dir / "perfil_fb"
+
+    # Limpiar lock files residuales que crashean Chrome al reiniciar
+    for lock in ["SingletonLock", "SingletonCookie", "SingletonSocket"]:
+        lock_path = user_data_dir / lock
+        if lock_path.exists():
+            try:
+                lock_path.unlink()
+                logger.info(f"🔓 {lock} eliminado del perfil.")
+            except Exception as ex:
+                logger.warning(f"No se pudo eliminar {lock}: {ex}")
+
     chrome_options.add_argument(f"user-data-dir={user_data_dir}")
     
     chrome_options.add_argument('--disable-blink-features=AutomationControlled')
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
     
-    # IMPORTANTE: Para Docker/Binance necesitarás estos:
-    chrome_options.add_argument('--headless') # Descomenta para Docker
+    # Headless: funciona correctamente ahora que el login maneja "Continuar" + password
+    # Usar --headless=new (Chrome 112+). NO usar --headless a secas en versiones recientes.
+    chrome_options.add_argument('--headless=new')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1280,800')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
 
@@ -216,8 +230,6 @@ def publicar_en_grupos():
 
             except Exception as e:
                 logger.error(f"❌ Error en grupo {link}: {e}")
-                # DEBUGGER: Aquí entra en juego tu instrucción de añadir debugger
-                import pdb; pdb.set_trace() 
                 continue
 
     finally:

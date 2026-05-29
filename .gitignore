@@ -1,3 +1,11 @@
 __pycache__
 */*/__pycache__/*
 publicar_arriendo_fb/utils/__pycache__/iniciar_session.cpython-312.pyc
+publicar_arriendo_fb/.claude/
+publicar_arriendo_fb/CLAUDE.md
+publicar_arriendo_fb/perfil_debug_tmp/*
+publicar_arriendo_fb/perfil_fb_ok/*
+publicar_arriendo_fb/utils/__pycache__/*
+publicar_arriendo_fb/fb_cookies.json
+publicar_arriendo_fb/*.log
+publicar_arriendo_fb/debug_dialog.html
